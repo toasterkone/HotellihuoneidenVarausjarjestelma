@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <table>
+    <tr>
+      <th>Asiakas</th>      
+    </tr>
+    {% for asiakas in asiakkaat %}
+    <tr>
+      <td>{{ asiakas.etunimi }}</td>
+      <td>{{ asiakas.sukunimi }}</td>
+      <td>{{ asiakas.puhelinnumero }}</td>
+      <td>{{ asiakas.email }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
+

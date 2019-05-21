@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+  
+{% block body %}
+<form method="POST" action="{{ url_for('asiakkaat_create') }}">
+  <input type="text" name="etunimi"/>
+  <input type="text" name="sukunimi"/>
+  <input type="text" name="puhelinnumero"/>
+  <input type="text" name="email"/>
+  <input type="submit" value="Add a new asiakas"/>
+</form>
+{% endblock %}
