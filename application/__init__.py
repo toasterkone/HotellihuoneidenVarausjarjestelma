@@ -17,7 +17,7 @@ db = SQLAlchemy(app)
 # Luetaan kansiosta application tiedoston views sisältö
 from application import views
 
-##jotta Asiakas-luokka on kaytossa
+#jotta Asiakas-luokka on kaytossa
 from application.asiakkaat import models
 from application.asiakkaat import views
 

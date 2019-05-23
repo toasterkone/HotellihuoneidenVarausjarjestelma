@@ -11,6 +11,12 @@
       <td>{{ asiakas.sukunimi }}</td>
       <td>{{ asiakas.puhelinnumero }}</td>
       <td>{{ asiakas.email }}</td>
+      <td>
+	    <form method="POST" action="{{ url_for('asiakkaat_update_email', asiakas_id=asiakas.id) }}">
+          <input type="text" name="email"/>  
+	      <input type="submit" value="Change email!"/>
+	    </form>
+      <td>
     </tr>
     {% endfor %}
   </table>
