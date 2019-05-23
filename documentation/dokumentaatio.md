@@ -1,12 +1,12 @@
-## HotellihuoneidenVarausjarjestelma
+# HotellihuoneidenVarausjarjestelma - dokumentaatio
 
-##Linkki Herokuun
-(https://tsoha-varaussovellus.herokuapp.com/ "Herokussa oleva sovellus")
+## Linkki Herokussa olevaan sovellukseen
+["Herokussa oleva sovellus"](https://tsoha-varaussovellus.herokuapp.com/)
 
 ## Aihe
 - Hotellien varausjärjestelmä
 
-##Kuva tietokantakaaviosta
+## Kuva tietokantakaaviosta
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/v_2.png "Tietokantakaavio")
 
 
@@ -23,20 +23,30 @@
 
 
 
-##Tietokannan kaynnistaminen pythonilla
+### Tietokannan kaynnistaminen pythonilla
 
-- python run.py
+```
+python run.py
+```
 
-##Esimerkkeja kayttotarkoituksista
+## Esimerkkeja kayttotarkoituksista
 
-####Aloitussivu
+#### Aloitussivu
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-51-59.png "Kuva aloitussivusta")
 
-####Asiakkaiden nakeminen
+#### Asiakkaiden nakeminen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-52-24.png "Kuva tietokannan sisallosta")
 
-####Asiakkaiden lisaaminen
+#### Asiakkaiden lisaaminen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-53-37.png "Kuva asiakkaan lisaamisesta, etunimi, sukunimi, puhelinnumero, sahkoposti")
 
-####Asiakkaan sahkopostin muuttaminen
+#### Asiakkaan sahkopostin muuttaminen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-54-08.png "Asiakkaan sahkopostin muuttaminen. Kirjoita uusi sahkoposti ja paina nappia")
 
-###Tietokannan kayttaminen SQLite:n avulla
+#### Asiakkaan sahkoposti muuttunut paivityksen jalkeen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-54-22.png "Paivittynyt email")
+
+#### Tietokannan kayttaminen SQLite:n avulla
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-58-43.png "SQLiten kaytto")
 
 
