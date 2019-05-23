@@ -6,6 +6,7 @@
 ## Linkki Herokussa sijaitsevaan sovellukseen
 (https://tsoha-varaussovellus.herokuapp.com/ "Herokussa oleva sovellus")
 
+(https://tsoha-varaussovellus.herokuapp.com/)
 
 ## HotellihuoneidenVarausjarjestelma
 
