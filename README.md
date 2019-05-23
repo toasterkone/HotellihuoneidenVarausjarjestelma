@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 # VarausApp
-=======
+
 # Tietokantasovellus-kurssi
 
-##Linkki Herokuun
+## Linkki Herokussa sijaitsevaan sovellukseen
 (https://tsoha-varaussovellus.herokuapp.com/ "Herokussa oleva sovellus")
 
 
@@ -33,7 +33,7 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - Hotellihuone((PK) id:Integer, (FK) varaus_id:Varaus, huonenumero:Integer, hinta:Integer, tyyppi:Varchar)
 - Lisavaruste((PK) id:Integer, (FK) varaus_id:Varaus, hinta:Integer, nimi:Varchar)
 
-##Kuva tietokantakaaviosta
+## Kuva tietokantakaaviosta
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/v_2.png "Tietokantakaavio")
 
 ## Toiminnot
@@ -47,8 +47,8 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - peru varaus
 - lisävarusteen osto
 
+## Linkki kayttotapauksiin
+(https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation "kansio sisaltaa kayttotapaukse")
 
 
 
-
->>>>>>> 44234d40416b5c54dc9330c236707d9da6efc498
