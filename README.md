@@ -4,11 +4,8 @@
 # Tietokantasovellus-kurssi
 
 ## Linkki Herokussa sijaitsevaan sovellukseen
-(https://tsoha-varaussovellus.herokuapp.com/ "Herokussa oleva sovellus")
+[Herokussa oleva sovellus](https://tsoha-varaussovellus.herokuapp.com/)
 
-(https://tsoha-varaussovellus.herokuapp.com/)
-
-(https://www.google.com)
 
 ## HotellihuoneidenVarausjarjestelma
 
@@ -51,7 +48,7 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - lisävarusteen osto
 
 ## Linkki kayttotapauksiin
-(https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation "kansio sisaltaa kayttotapaukse")
+[kayttotarkoitukset sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
 
 
 
