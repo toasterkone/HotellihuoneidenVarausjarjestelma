@@ -1,11 +1,72 @@
-{% extends "layout.html" %}
-  
-{% block body %}
-<form method="POST" action="{{ url_for('asiakkaat_create') }}">
-  <input type="text" name="etunimi"/>
-  <input type="text" name="sukunimi"/>
-  <input type="text" name="puhelinnumero"/>
-  <input type="text" name="email"/>
-  <input type="submit" value="Add a new asiakas"/>
-</form>
-{% endblock %}
+  {% extends "layout.html" %}
+
+  {% block body %}
+  <form method="POST" action="{{ url_for('asiakkaat_create') }}">
+    <table>
+      <tr>
+	    <td>
+	      {{ form.etunimi.label }}
+	    </td>
+	    <td>
+	      {{ form.etunimi }}
+	    </td>
+	    <td>
+	      <ul>
+	        {% for error in form.etunimi.errors %}
+	        <li>{{ error }}</li>
+	        {% endfor %}
+	      </ul>
+	    </td>
+      </tr>
+      <tr>
+	    <td>
+	      {{ form.sukunimi.label }}
+	    </td>
+	    <td>
+	      {{ form.sukunimi }}
+	    </td>
+	    <td>
+	      <ul>
+	        {% for error in form.sukunimi.errors %}
+	        <li>{{ error }}</li>
+	        {% endfor %}
+	      </ul>
+	    </td>
+      </tr>
+      <tr>
+	    <td>
+	      {{ form.puhelinnumero.label }}
+	    </td>
+	    <td>
+	      {{ form.puhelinnumero }}
+	    </td>
+	    <td>
+	      <ul>
+	        {% for error in form.puhelinnumero.errors %}
+	        <li>{{ error }}</li>
+	        {% endfor %}
+	      </ul>
+	    </td>
+      </tr>
+      <tr>
+	    <td>
+	      {{ form.email.label }}
+	    </td>
+	    <td>
+	      {{ form.email }}
+	    </td>
+	    <td>
+	      <ul>
+	        {% for error in form.email.errors %}
+	        <li>{{ error }}</li>
+	        {% endfor %}
+	      </ul>
+	    </td>
+      </tr>
+      <tr>
+	    <td colspan="3">
+	      <input type="submit" value="Add a new asiakas"/>
+	    </td>
+      </tr>
+  </form>
+  {% endblock %}

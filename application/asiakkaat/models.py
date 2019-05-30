@@ -1,6 +1,7 @@
 from application import db
 
 #Asiakas-luokka
+#Asiakas-tauluun liittyy aina account(käyttäjä)-taulu
 class Asiakas(db.Model):
 
     id = db.Column(db.Integer, primary_key=True) #Paa-avain
@@ -11,6 +12,10 @@ class Asiakas(db.Model):
     puhelinnumero = db.Column(db.String(144), nullable=False)
     email = db.Column(db.String(144), nullable=False)
 
+
+    #viiteavain viittaa account-tauluun
+    account_id = db.Column(db.Integer, db.ForeignKey('account.id'),
+                           nullable=False)
     
 
     def __init__(self, etunimi, sukunimi, puhelinnumero, email):
