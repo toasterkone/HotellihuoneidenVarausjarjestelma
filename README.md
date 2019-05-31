@@ -26,6 +26,7 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - Hotellihuone 
 - Lisavaruste
 - Varaus
+- account(käyttäjä-taulu)
 
 ## Tietokantakaavion kuvaus
 - Asiakas((PK) id:Integer, etunimi:Varchar, sukunimi:Varchar, puhelinnumero:Varchar, email:Varchar)
@@ -49,6 +50,15 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 
 ## Linkki kayttotapauksiin
 [kayttotarkoitukset sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
+
+## Testitunnusten kirjautumiseen vaaditut tiedot
+
+| Username | Password |
+|:--------:|:--------:|
+| hello    |    world |
+
+
+
 
 
 
