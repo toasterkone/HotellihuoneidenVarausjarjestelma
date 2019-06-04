@@ -7,6 +7,8 @@
 
 from application import db
 
+from sqlalchemy.sql import text
+
 class User(db.Model):
 
     __tablename__ = "account"
@@ -39,3 +41,22 @@ class User(db.Model):
 
     def is_authenticated(self):
         return True
+
+    #metodi, palauttaa kayttajat, joilla ei yhtaan asiakasta
+    @staticmethod
+    def etsi_kayttajat_ilman_asiakkaita():
+        stmt = text("SELECT Account.id, Account.name FROM Account"
+                     " LEFT JOIN Asiakas ON Asiakas.account_id = Account.id"
+                     " WHERE Asiakas.id IS NULL")
+
+        res = db.engine.execute(stmt)
+
+        #tuloksista luodaan lista, joka sisaltaa jokaiseen tulosriviin liittyvan
+        #hajautustaulun
+        response = []
+        for row in res:
+            response.append({"id":row[0], "name":row[1]})
+
+        return response
+
+

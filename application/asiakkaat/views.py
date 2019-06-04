@@ -56,18 +56,35 @@ def asiakkaat_create():
 
 
 
-#metodi, jolla paivitetaan asiakkaan sahkoposti
+
+
+
+
+
+
+#metodi paivittaa kaikki tiedot, jotka halutaan muuttaa
 @app.route("/asiakkaat/<asiakas_id>/", methods=["POST"])
-def asiakkaat_update_email(asiakas_id):
+def asiakkaat_update_tiedot(asiakas_id):
 
     a = Asiakas.query.get(asiakas_id)
-    a.email = request.form.get("email") #hakee tekstikenttaan syotetyn merkkijonon
+
+    if request.form.get("sukunimi") is not None:
+        a.sukunimi = request.form.get("sukunimi") #hakee tekstikenttaan syotetyn merkkijonon
+    if request.form.get("etunimi") is not None:
+
+        a.etunimi = request.form.get("etunimi") #hakee tekstikenttaan syotetyn merkkijonon
+
+    if request.form.get("email") is not None:
+
+        a.email = request.form.get("email") #hakee tekstikenttaan syotetyn merkkijonon
+
+    if request.form.get("puhelinnumero") is not None:
+        a.puhelinnumero = request.form.get("puhelinnumero") #hakee tekstikenttaan syotetyn merkkijonon
 
   
     db.session().commit()
   
     return redirect(url_for("asiakkaat_index"))
-
 
 
 

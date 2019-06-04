@@ -6,6 +6,8 @@ class Asiakas(db.Model):
 
     id = db.Column(db.Integer, primary_key=True) #Paa-avain
 
+
+
     #attribuutteja
     etunimi = db.Column(db.String(144), nullable=False)
     sukunimi = db.Column(db.String(144), nullable=False)

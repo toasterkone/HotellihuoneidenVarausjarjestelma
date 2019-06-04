@@ -12,9 +12,24 @@
       <td>{{ asiakas.puhelinnumero }}</td>
       <td>{{ asiakas.email }}</td>
       <td>
-	    <form method="POST" action="{{ url_for('asiakkaat_update_email', asiakas_id=asiakas.id) }}">
+	    <form method="POST" action="{{ url_for('asiakkaat_update_tiedot', asiakas_id=asiakas.id) }}">
+          <input type="text" name="etunimi"/>  
+	      <input type="submit" value="Vaihda etunimi"/>
+	    </form>
+      <td>
+	    <form method="POST" action="{{ url_for('asiakkaat_update_tiedot', asiakas_id=asiakas.id) }}">
+          <input type="text" name="sukunimi"/>  
+	      <input type="submit" value="Vaihda sukunimi"/>
+	    </form>
+      <td>
+	    <form method="POST" action="{{ url_for('asiakkaat_update_tiedot', asiakas_id=asiakas.id) }}">
+          <input type="text" name="puhelinnumero"/>  
+	      <input type="submit" value="Vaihda puh.num."/>
+	    </form>
+      <td>
+	    <form method="POST" action="{{ url_for('asiakkaat_update_tiedot', asiakas_id=asiakas.id) }}">
           <input type="text" name="email"/>  
-	      <input type="submit" value="Change email!"/>
+	      <input type="submit" value="Vaihda email"/>
 	    </form>
       <td>
     </tr>

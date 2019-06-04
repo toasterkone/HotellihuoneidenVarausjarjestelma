@@ -1,7 +1,26 @@
 {% extends "layout.html" %}
 
 {% block body %}
-  <p>
-    Hello world!
-  </p>
+<p>
+  Hello world!
+</p>
+
+{% if needs_asiakkaita is defined %}
+<p>
+  The following users need asiakkaita:
+</p>
+
+<ul>
+  {% for user in needs_asiakkaita %}
+  <li>
+    {{user.id}} {{user.name}}
+  </li>
+  {% endfor %}
+</ul>
+
+{% endif %}
+
 {% endblock %}
+
+
+
