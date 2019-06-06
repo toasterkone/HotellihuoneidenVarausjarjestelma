@@ -34,8 +34,13 @@ from application import views
 from application.asiakkaat import models
 from application.asiakkaat import views
 
+#account-luokka kayttoon
 from application.auth import models
 from application.auth import views
+
+
+#huone-luokka kayttoon
+from application.huoneet import models
 
 
 #kirjautuminen

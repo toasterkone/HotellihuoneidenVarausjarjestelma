@@ -12,3 +12,4 @@ from application.auth.models import User
 @app.route("/")
 def index():
     return render_template("index.html",needs_asiakkaita=User.etsi_kayttajat_ilman_asiakkaita())
+    #return render_template("index.html")

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <table>
+    <tr>
+      <th>Huone</th>      
+    </tr>
+    {% for huone in huoneet %}
+    <tr>
+      <td>{{ huone.huonenumero }}</td>
+      <td>{{ huone.hinta }}</td>
+      <td>{{ huone.tyyppi }}</td>
+      <td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
+
