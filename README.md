@@ -65,6 +65,7 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 
 ## Linkki kayttotapauksiin
 [kayttotarkoitukset sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
+- Käyttötarkoituksia on tiedostossa "dokumentaatio.md"
 
 ## Testitunnusten kirjautumiseen vaaditut tiedot
 
