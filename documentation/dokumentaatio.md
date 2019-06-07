@@ -32,21 +32,23 @@ python run.py
 ## Esimerkkeja kayttotarkoituksista
 
 #### Aloitussivu
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-51-59.png "Kuva aloitussivusta")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/aloitussivu.png "Kuva aloitussivusta")
+- Kuvasta näkyy myös käyttäjät, joilla ei ole yhtään asiakkaita.
 
-#### Asiakkaiden nakeminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-52-24.png "Kuva tietokannan sisallosta")
+#### Kirjautuminen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/kirjautuminen.png "Kuva kirjautumissivusta")
+
+
+#### Asiakkaiden listaaminen ja poistaminen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Asiakkaiden%20listaaminen%20ja%20poistaminen.png "Asiakkaiden listaaminen ja poistaminen")
+- Asiakkaan poistaminen vaatii kirjautumisen.
 
 #### Asiakkaiden lisaaminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-53-37.png "Kuva asiakkaan lisaamisesta, etunimi, sukunimi, puhelinnumero, sahkoposti")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/asiakkaan%20lisaaminen.png "Lomake, jolla asiakas lisätään.")
+- Vaatii kirjautumisen.
 
-#### Asiakkaan sahkopostin muuttaminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-54-08.png "Asiakkaan sahkopostin muuttaminen. Kirjoita uusi sahkoposti ja paina nappia")
 
-#### Asiakkaan sahkoposti muuttunut paivityksen jalkeen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-54-22.png "Paivittynyt email")
-
-#### Tietokannan kayttaminen SQLite:n avulla
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Screenshot%20from%202019-05-23%2021-58-43.png "SQLiten kaytto")
+#### Schema ja käyttäjän lisääminen SQLiten avulla
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema%20ja%20kayttajan%20lisaaminen.png "SQLiten kaytto")
 
 
