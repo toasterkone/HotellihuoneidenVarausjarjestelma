@@ -21,12 +21,18 @@ Asiakkaasta tallennetaan ainakin etu- ja sukunimi, puhelinnumero, sähköposti. 
 Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huoneesta. 
 
 
-## Tietokantataulut
+## TavoiteTietokantataulut
 - Asiakas
 - Hotellihuone 
 - Lisavaruste
 - Varaus
 - account(käyttäjä-taulu)
+
+## Tämänhetkiset Tietokantataulut
+- Asiakas
+- Huone
+- account(käyttäjä-taulu)
+
 
 ## Tietokantakaavion kuvaus
 - Asiakas((PK) id:Integer, etunimi:Varchar, sukunimi:Varchar, puhelinnumero:Varchar, email:Varchar)
@@ -34,10 +40,13 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - Hotellihuone((PK) id:Integer, (FK) varaus_id:Varaus, huonenumero:Integer, hinta:Integer, tyyppi:Varchar)
 - Lisavaruste((PK) id:Integer, (FK) varaus_id:Varaus, hinta:Integer, nimi:Varchar)
 
-## Kuva tietokantakaaviosta
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/v_2.png "Tietokantakaavio")
+## Kuva tavoitetietokantakaaviosta
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/tavoite_tietokantakaavio.png "Tavoitetietokantakaavio")
 
-## Toiminnot
+## Kuva tämänhetkisestä tietokantakaaviosta
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_1.png "Toteutunut tietokantakaavio")
+
+## TavoiteToiminnot
 
 - kirjautuminen
 - Lisaa huone
@@ -47,6 +56,12 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - tee varaus
 - peru varaus
 - lisävarusteen osto
+
+## Tämänhetkiset toiminnot sovelluksessa
+- kirjautuminen
+- listaa asiakkaat
+- poista asiakas
+- muokkaa asiakkaan tiedot
 
 ## Linkki kayttotapauksiin
 [kayttotarkoitukset sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
