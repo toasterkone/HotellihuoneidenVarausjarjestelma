@@ -7,7 +7,7 @@
 - Hotellien varausjärjestelmä
 
 ## Kuva tietokantakaaviosta
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/v_2.png "Tietokantakaavio")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_1.png "Nykyinen tietokantakaavio")
 
 
 ## Toiminnot
