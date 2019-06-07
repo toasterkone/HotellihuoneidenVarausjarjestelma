@@ -1,1 +1,7 @@
 venv
+application.asiakkaat.db
+application/__pycache__
+application/asiakkaat.db
+application/asiakkaat/__pycache__
+application/auth/__pycache__
+application/huoneet/__pycache__

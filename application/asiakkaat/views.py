@@ -87,4 +87,15 @@ def asiakkaat_update_tiedot(asiakas_id):
     return redirect(url_for("asiakkaat_index"))
 
 
+#asiakkaan poistaminen, vaatii kirjautumisen
+@app.route("/asiakkaat/<asiakas_id>/delete", methods=["GET"])
+@login_required 
+def asiakkaat_delete(asiakas_id):
+
+    db.session.delete(Asiakas.query.get(asiakas_id))
+    db.session().commit()
+
+    return redirect(url_for("asiakkaat_index"))
+
+
 

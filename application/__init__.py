@@ -13,7 +13,7 @@ else:
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///asiakkaat.db"    
     app.config["SQLALCHEMY_ECHO"] = True
 
-# Käytetään tasks.db-nimistä SQLite-tietokantaa. Kolme vinoviivaa
+# Käytetään asiakkaat.db-nimistä SQLite-tietokantaa. Kolme vinoviivaa
 # kertoo, tiedosto sijaitsee tämän sovelluksen tiedostojen kanssa
 # samassa paikassa
 
@@ -25,7 +25,6 @@ else:
 # Luodaan db-olio, jota käytetään tietokannan käsittelyyn
 db = SQLAlchemy(app)
 
-#oman sovelluksen toiminta
 
 # Luetaan kansiosta application tiedoston views sisältö
 from application import views

@@ -1,6 +1,8 @@
 from flask import render_template
 from application import app
 from application.auth.models import User
+from application.asiakkaat.models import Asiakas
+from application.huoneet.models import Huone
 
 #tiedosto sisaltaa ohjeistuksen sovelluksen paasivulle paasemiseen
 
