@@ -1,4 +1,3 @@
-
 # VarausApp
 
 # Tietokantasovellus-kurssi
