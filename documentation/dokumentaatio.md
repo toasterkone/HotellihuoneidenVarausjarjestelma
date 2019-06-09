@@ -37,7 +37,6 @@ python run.py
 
 #### Kirjautuminen
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/kirjautuminen.png "Kuva kirjautumissivusta")
-<<<<<<< b28896986bbcd7c86b21ce6ba75bd98ad30d9d88
 
 
 #### Asiakkaiden listaaminen ja poistaminen
@@ -67,6 +66,6 @@ python run.py
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema%20ja%20kayttajan%20lisaaminen.png "SQLiten kaytto")
 
 
->>>>>>> Lisätty dokumentaatiota
+
 
 
