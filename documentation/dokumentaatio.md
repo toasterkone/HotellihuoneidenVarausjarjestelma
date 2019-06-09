@@ -39,7 +39,7 @@ python run.py
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/kirjautuminen.png "Kuva kirjautumissivusta")
 
 
-#### Asiakkaiden listaaminen ja poistaminen
+#### Asiakkaiden listaaminen, tietojen muuttaminen ja asiakkaan poistaminen
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Asiakkaiden%20listaaminen%20ja%20poistaminen.png "Asiakkaiden listaaminen ja poistaminen")
 - Asiakkaan poistaminen vaatii kirjautumisen.
 
@@ -50,20 +50,8 @@ python run.py
 
 #### Schema ja käyttäjän lisääminen SQLiten avulla
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema%20ja%20kayttajan%20lisaaminen.png "SQLiten kaytto")
-=======
 
 
-#### Asiakkaiden listaaminen ja poistaminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Asiakkaiden%20listaaminen%20ja%20poistaminen.png "Asiakkaiden listaaminen ja poistaminen")
-- Asiakkaan poistaminen vaatii kirjautumisen.
-
-#### Asiakkaiden lisaaminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/asiakkaan%20lisaaminen.png "Lomake, jolla asiakas lisätään.")
-- Vaatii kirjautumisen.
-
-
-#### Schema ja käyttäjän lisääminen SQLiten avulla
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema%20ja%20kayttajan%20lisaaminen.png "SQLiten kaytto")
 
 
 
