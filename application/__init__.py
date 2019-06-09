@@ -40,7 +40,7 @@ from application.auth import views
 
 #huone-luokka kayttoon
 from application.huoneet import models
-
+from application.huoneet import views
 
 #kirjautuminen
 from application.auth.models import User
