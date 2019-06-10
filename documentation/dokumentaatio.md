@@ -10,7 +10,7 @@
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_1.png "Nykyinen tietokantakaavio")
 
 
-## Toiminnot
+## TavoiteToiminnot
 
 - kirjautuminen
 - Lisaa huone
@@ -20,6 +20,15 @@
 - tee varaus
 - peru varaus
 - lisävarusteen osto
+
+## Sovelluksessa olevat toiminnot
+- kirjautuminen
+- lisää asiakas
+- muuta asiakkaan tietoja
+- poista asiakas
+- listaa huoneet
+- lisää huone
+- listaa huoneet
 
 
 
@@ -47,6 +56,13 @@ python run.py
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/asiakkaan%20lisaaminen.png "Lomake, jolla asiakas lisätään.")
 - Vaatii kirjautumisen.
 
+
+#### Hotellihuoneen lisääminen
+- vaatii kirjautumisen, pitää syöttää huonenumero (kokonaisluku), hinta (kokonaisluku) ja huoneen tyyppi (Esimerkiksi economy tai deluxe)
+- painikkeen painaminen lisää huoneen
+
+#### Hotellihuoneiden listaus
+- onnistuu huoneiden listaaminen sivulla
 
 #### Schema ja käyttäjän lisääminen SQLiten avulla
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema%20ja%20kayttajan%20lisaaminen.png "SQLiten kaytto")

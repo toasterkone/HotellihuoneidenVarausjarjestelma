@@ -61,6 +61,8 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - listaa asiakkaat
 - poista asiakas
 - muokkaa asiakkaan tiedot
+- lisää huone
+- listaa huoneet
 
 ## Linkki kayttotapauksiin
 [kayttotarkoitukset sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
