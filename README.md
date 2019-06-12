@@ -36,10 +36,10 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 
 
 ## Kuva tavoitetietokantakaaviosta
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/tavoite_tietokantakaavio.png "Tavoitetietokantakaavio")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_2.png "Tavoitetietokantakaavio")
 
 ## Kuva tämänhetkisestä tietokantakaaviosta
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_2.png "Toteutunut tietokantakaavio")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut.png "Toteutunut tietokantakaavio")
 
 ## TavoiteToiminnot
 
