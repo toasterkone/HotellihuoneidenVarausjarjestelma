@@ -43,8 +43,8 @@ python run.py
 ## Esimerkkeja kayttotarkoituksista
 
 #### Aloitussivu
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/aloitussivu.png "Kuva aloitussivusta")
-- Kuvasta näkyy myös käyttäjät, joilla ei ole yhtään asiakkaita.
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitus_sivu.png "Kuva aloitussivusta")
+- Kuvasta näkyy myös käyttäjät, joilla ei ole yhtään asiakkaita. Kysely täyttää kurssin vaatimukset monimutkaisesta kyselystä.
 
 #### Kirjautuminen
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/kirjautuminen.png "Kuva kirjautumissivusta")
@@ -60,10 +60,14 @@ python run.py
 
 
 #### Hotellihuoneen lisääminen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Huoneen_lisaaminen.png "Lomake, jolla huone lisätään.")
+
 - vaatii admin-oikeuksilla kirjautumisen, pitää syöttää huonenumero (kokonaisluku), hinta (kokonaisluku) ja huoneen tyyppi (Esimerkiksi economy tai deluxe)
 - painikkeen painaminen lisää huoneen
 
 #### Hotellihuoneiden listaus
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Huoneiden_listaaminen.png "Huoneiden listaus, huonenumero, hinta, tyyppi")
+
 - onnistuu huoneiden listaaminen sivulla
 
 #### Schema ja käyttäjän lisääminen SQLiten avulla
