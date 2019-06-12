@@ -7,12 +7,16 @@
 #ei huone-tauluun kayttaja_id:ta
 #vai halutaanko?
 
-from application import app, db
+from application import app, db, login_required #login omasta sovelluksesta
+
 from flask import redirect, render_template, request, url_for
+from flask_login import current_user#, login_required tuodaan omasta sovelluksesta Osa 5 
+
+
 from application.huoneet.models import Huone
 from application.huoneet.forms import HuoneForm
 
-from flask_login import login_required, current_user
+
 
 
 
@@ -24,17 +28,20 @@ def huoneet_index():
     return render_template("huoneet/list.html", huoneet = Huone.query.all())
 
 
+#@login_required() ORIGINAL
 #nayttaa kayttajalle lomakkeen, jolla luodaan huoneita
+#eiko tamankin pitaisi vaatia ADMIN?
 @app.route("/huoneet/new/")
-@login_required
+@login_required(rooli="ADMIN")
 def huoneet_form():
     return render_template("huoneet/new.html", form = HuoneForm())
 
 #lisaa uuden huoneen pyynnossa lahetetyn lomakkeen perusteella
+#Osa 5: vaatii Admin-roolin
 @app.route("/huoneet/", methods=["POST"])
-@login_required
+@login_required(rooli="ADMIN")
 def huoneet_create():
-
+#tossa luki role="admin" huom EIKA rooli
 
 
   

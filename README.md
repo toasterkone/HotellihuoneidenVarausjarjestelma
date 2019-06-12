@@ -26,18 +26,14 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - Lisavaruste
 - Varaus
 - account(käyttäjä-taulu)
+- Rooli
 
 ## Tämänhetkiset Tietokantataulut
 - Asiakas
 - Huone
 - account(käyttäjä-taulu)
+- Rooli
 
-
-## Tietokantakaavion kuvaus
-- Asiakas((PK) id:Integer, etunimi:Varchar, sukunimi:Varchar, puhelinnumero:Varchar, email:Varchar)
-- Varaus((PK) id:Integer, (FK) asiakas_id:Asiakas, (FK) hotellihuone_id:Hotellihuone, varausviikko:Integer, hinta:Integer)
-- Hotellihuone((PK) id:Integer, (FK) varaus_id:Varaus, huonenumero:Integer, hinta:Integer, tyyppi:Varchar)
-- Lisavaruste((PK) id:Integer, (FK) varaus_id:Varaus, hinta:Integer, nimi:Varchar)
 
 ## Kuva tavoitetietokantakaaviosta
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/tavoite_tietokantakaavio.png "Tavoitetietokantakaavio")
@@ -63,16 +59,24 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - muokkaa asiakkaan tiedot
 - lisää huone
 - listaa huoneet
+- monimutkainen kysely etusivulla, joka näyttää käyttäjät, joilla ei ole asiakkaita
+- autorisointi
 
 ## Linkki kayttotapauksiin
 [kayttotarkoitukset sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
 - Käyttötarkoituksia on tiedostossa "dokumentaatio.md"
 
-## Testitunnusten kirjautumiseen vaaditut tiedot
+## Admin-oikeudet omaava käyttäjä ja kirjautumiseen vaaditut tiedot
 
 | Username | Password |
 |:--------:|:--------:|
 | hello    |    world |
+
+## User-oikeudet omaava käyttäjä ja kirjautumiseen vaaditut tiedot
+
+| Username | Password |
+|:--------:|:--------:|
+| hei      |   maailma|
 
 
 

@@ -3,7 +3,7 @@
 
 #käyttäjälle on metodit get_id, is_active, is_anonymous sekä is_authenticated.
 
-
+#sisaltaa myos rooli-luokan
 
 from application import db
 
@@ -25,6 +25,10 @@ class User(db.Model):
     ##jokaiseen käyttäjään liitetään käyttäjän asiakas-tiedot
     asiakkaat = db.relationship("Asiakas", backref='account', lazy=True)
 
+    #kayttajalla on FK rooli_id
+    rooli_id = db.Column(db.Integer, db.ForeignKey("rooli.id"), nullable=True)
+    rooli = db.relationship("Rooli")
+
     def __init__(self, name, username, password): #ns. konstruktori(javassa)
         self.name = name
         self.username = username
@@ -42,12 +46,21 @@ class User(db.Model):
     def is_authenticated(self):
         return True
 
+
+
+ 
+
+
+
+
     #metodi, palauttaa kayttajat, joilla ei yhtaan asiakasta
     @staticmethod
     def etsi_kayttajat_ilman_asiakkaita():
         stmt = text("SELECT Account.id, Account.name FROM Account"
                      " LEFT JOIN Asiakas ON Asiakas.account_id = Account.id"
-                     " WHERE Asiakas.id IS NULL")
+                     " WHERE Asiakas.id IS NULL"
+                     " GROUP BY Account.id"
+                     " HAVING COUNT(Asiakas.id) = 0")
 
         res = db.engine.execute(stmt)
 
@@ -55,8 +68,19 @@ class User(db.Model):
         #hajautustaulun
         response = []
         for row in res:
-            response.append({"id":row[0], "name":row[1]})
+            response.append({"id":row[0],"name":row[1]})
 
         return response
+
+
+#Rooli-luokka, jolla attribuutit id ja nimi
+class Rooli(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nimi = db.Column(db.String(32), nullable=False)
+    
+    def __init__(self, nimi):
+        self.nimi = nimi
+
+
 
 

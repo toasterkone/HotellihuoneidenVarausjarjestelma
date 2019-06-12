@@ -29,6 +29,8 @@
 - listaa huoneet
 - lisää huone
 - listaa huoneet
+- autorisointi
+- etusivulla monimutkainen kysely, joka tulostaa käyttäjät, joilla ei ole asiakkaita
 
 
 
@@ -50,15 +52,15 @@ python run.py
 
 #### Asiakkaiden listaaminen, tietojen muuttaminen ja asiakkaan poistaminen
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Asiakkaiden%20listaaminen%20ja%20poistaminen.png "Asiakkaiden listaaminen ja poistaminen")
-- Asiakkaan poistaminen vaatii kirjautumisen.
+- Asiakkaan poistaminen vaatii kirjautumisen. User voi tehdä.
 
 #### Asiakkaiden lisaaminen
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/asiakkaan%20lisaaminen.png "Lomake, jolla asiakas lisätään.")
-- Vaatii kirjautumisen.
+- Vaatii kirjautumisen. User voi tehdä.
 
 
 #### Hotellihuoneen lisääminen
-- vaatii kirjautumisen, pitää syöttää huonenumero (kokonaisluku), hinta (kokonaisluku) ja huoneen tyyppi (Esimerkiksi economy tai deluxe)
+- vaatii admin-oikeuksilla kirjautumisen, pitää syöttää huonenumero (kokonaisluku), hinta (kokonaisluku) ja huoneen tyyppi (Esimerkiksi economy tai deluxe)
 - painikkeen painaminen lisää huoneen
 
 #### Hotellihuoneiden listaus
