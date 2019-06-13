@@ -23,6 +23,7 @@
 
 ## Sovelluksessa olevat toiminnot
 - kirjautuminen
+- rekisteröityminen
 - lisää asiakas
 - muuta asiakkaan tietoja
 - poista asiakas
@@ -49,6 +50,11 @@ python run.py
 #### Kirjautuminen
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/kirjautuminen.png "Kuva kirjautumissivusta")
 
+#### Rekisteröityminen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/kirjautuminen.png "Kuva rekisteröitymissivusta")
+- Linkki rekisteröitymiseen on aloitussivun oikeassa ylänurkassa.
+- Syötä nimi, käyttäjänimi ja salasana (kaikkien minimi 2 merkkiä ja max 144 merkkiä).
+- Huom! Rekisteröityessäsi sinulla on vain käyttäjä-oikeudet eikä admin-oikeuksia.
 
 #### Asiakkaiden listaaminen, tietojen muuttaminen ja asiakkaan poistaminen
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Asiakkaiden%20listaaminen%20ja%20poistaminen.png "Asiakkaiden listaaminen ja poistaminen")
@@ -70,8 +76,8 @@ python run.py
 
 - onnistuu huoneiden listaaminen sivulla
 
-#### Schema ja käyttäjän lisääminen SQLiten avulla
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema%20ja%20kayttajan%20lisaaminen.png "SQLiten kaytto")
+#### Schema 
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema%20ja%20kayttajan%20lisaaminen.png "Kuva tietokannan skeemasta")
 
 
 

@@ -54,6 +54,7 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 
 ## Tämänhetkiset toiminnot sovelluksessa
 - kirjautuminen
+- rekisteröityminen
 - listaa asiakkaat
 - poista asiakas
 - muokkaa asiakkaan tiedot
