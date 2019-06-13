@@ -51,7 +51,7 @@ python run.py
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/kirjautuminen.png "Kuva kirjautumissivusta")
 
 #### Rekisteröityminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/kirjautuminen.png "Kuva rekisteröitymissivusta")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/rekisteroityminen.png "Kuva rekisteröitymissivusta")
 - Linkki rekisteröitymiseen on aloitussivun oikeassa ylänurkassa.
 - Syötä nimi, käyttäjänimi ja salasana (kaikkien minimi 2 merkkiä ja max 144 merkkiä).
 - Huom! Rekisteröityessäsi sinulla on vain käyttäjä-oikeudet eikä admin-oikeuksia.
@@ -77,7 +77,7 @@ python run.py
 - onnistuu huoneiden listaaminen sivulla
 
 #### Schema 
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema%20ja%20kayttajan%20lisaaminen.png "Kuva tietokannan skeemasta")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema.png "Kuva tietokannan skeemasta")
 
 
 
