@@ -6,8 +6,8 @@
 ## Aihe
 - Hotellien varausjärjestelmä
 
-## Kuva tietokantakaaviosta
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut.png "Nykyinen tietokantakaavio")
+## Kuva Herokussa olevan sovelluksen tietokantakaaviosta
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_5.png "Nykyinen tietokantakaavio")
 
 
 ## TavoiteToiminnot
