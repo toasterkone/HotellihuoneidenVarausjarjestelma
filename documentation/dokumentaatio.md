@@ -46,11 +46,11 @@ python run.py
 ## Esimerkkeja kayttotarkoituksista
 
 #### Aloitussivu
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitus_sivu.png "Kuva aloitussivusta")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_uusin.png "Kuva aloitussivusta")
 - Kuvasta näkyy myös käyttäjät, joilla ei ole yhtään asiakkaita. Kysely täyttää kurssin vaatimukset monimutkaisesta kyselystä.
 
 #### Kirjautuminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/kirjautuminen.png "Kuva kirjautumissivusta")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Kirjautuminen_sivu.png "Kuva kirjautumissivusta")
 
 #### Rekisteröityminen
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/rekisteroityminen.png "Kuva rekisteröitymissivusta")
@@ -59,40 +59,41 @@ python run.py
 - Huom! Rekisteröityessäsi sinulla on vain käyttäjä-oikeudet eikä admin-oikeuksia.
 
 #### Asiakkaiden listaaminen, tietojen muuttaminen ja asiakkaan poistaminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Asiakkaiden%20listaaminen%20ja%20poistaminen.png "Asiakkaiden listaaminen ja poistaminen")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_asiakkaat.png "Asiakkaiden listaaminen, tietojen muuttaminen ja poistaminen")
+- CRUD
 - Asiakkaan poistaminen vaatii kirjautumisen. User voi tehdä.
 
 #### Asiakkaiden lisaaminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/asiakkaan%20lisaaminen.png "Lomake, jolla asiakas lisätään.")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Lis%C3%A4%C3%A4_asiakas.png "Lomake, jolla asiakas lisätään.")
 - Vaatii kirjautumisen. User voi tehdä.
 
 
 #### Hotellihuoneen lisääminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Huoneen_lisaaminen.png "Lomake, jolla huone lisätään.")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Lis%C3%A4%C3%A4_huone.png "Lomake, jolla huone lisätään.")
 
 - vaatii admin-oikeuksilla kirjautumisen, pitää syöttää huonenumero (kokonaisluku), hinta (kokonaisluku) ja huoneen tyyppi (Esimerkiksi economy tai deluxe)
 - painikkeen painaminen lisää huoneen
 
 #### Hotellihuoneiden listaus
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Huoneiden_listaaminen.png "Huoneiden listaus, huonenumero, hinta, tyyppi")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_huoneet.png "Huoneiden listaus, huonenumero, hinta, tyyppi")
 
-- onnistuu huoneiden listaaminen sivulla
+- onnistuu huoneiden listaaminen sivulla, ei vaadi kirjautumista
 
 #### Varauksen lisääminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Huoneen_lisaaminen.png "Lomake, jolla varaus lisätään.")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Varauksen_tekeminen.png "Lomake, jolla varaus lisätään.")
 
 - Vaatii kirjautumisen. Pitää syöttää huone_id, asiakas_id, huoneen hinta ja varausviikko.
 - painikkeen painaminen lisää varauksen.
 
 #### Varausten listaus
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Huoneiden_listaaminen.png "Varausten listaaminen")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_varaukset.png "Varausten listaaminen")
 
 - Onnistuu "Listaa varaukset"-linkkiä painamalla.
 
 
 
 #### Schema 
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema.png "Kuva tietokannan nykyisestä skeemasta")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Uusin_Schema.png "Kuva tietokannan nykyisestä skeemasta")
 
 
 

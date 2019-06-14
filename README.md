@@ -40,7 +40,7 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_2.png "Tavoitetietokantakaavio")
 
 ## Kuva tämänhetkisestä tietokantakaaviosta
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut.png "Toteutunut tietokantakaavio")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_5.png "Toteutunut tietokantakaavio")
 
 ## TavoiteToiminnot
 
@@ -55,6 +55,7 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 
 ## Tämänhetkiset toiminnot sovelluksessa
 - kirjautuminen
+- Asiakas-taulun CRUD-toiminnot (alla listattuna)
 - rekisteröityminen (jonka jälkeen kayttaja-oikeudet)
 - listaa asiakkaat
 - poista asiakas
@@ -66,9 +67,19 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - Varauksen tekeminen
 - Varausten listaaminen
 
+## Linkki dokumentaatiokansioon
+[dokumentaatiota sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
+
+
 ## Linkki kayttotapauksiin
-[kayttotarkoitukset sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
-- Käyttötarkoituksia on tiedostossa "dokumentaatio.md"
+[käyttötarkoituksia-tiedosto](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/dokumentaatio.md )
+
+
+## Linkki kayttöohjeisiin
+[käyttöohje-tiedosto](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kaytto_ohje.md )
+
+## Linkki asennusohjeeseen
+[asennusohje-tiedosto](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/asennusohje.md )
 
 ## Admin-oikeudet omaava käyttäjä ja kirjautumiseen vaaditut tiedot
 
@@ -76,11 +87,19 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 |:--------:|:--------:|
 | hello    |    world |
 
+- Tällä tilillä pystyy käyttämään kaikkia verkkosovelluksen toimintoja
+
 ## User-oikeudet omaava käyttäjä ja kirjautumiseen vaaditut tiedot
 
 | Username | Password |
 |:--------:|:--------:|
 | hei      |   maailma|
+
+- Tällä tilillä pystyy käyttämään kaikkia verkkosovelluksen toimintoja paitsi huoneen lisäystä
+
+## Tämänhetkinen Schema
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Uusin_Schema.png "Nykyinen Schema")
+
 
 
 
