@@ -3,6 +3,7 @@ from application import app
 from application.auth.models import User
 from application.asiakkaat.models import Asiakas
 from application.huoneet.models import Huone
+from application.varaukset.models import Varaus
 
 #tiedosto sisaltaa ohjeistuksen sovelluksen paasivulle paasemiseen
 

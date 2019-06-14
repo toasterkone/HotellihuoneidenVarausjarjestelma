@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <table>
+    <tr>
+      <th>Varaus</th>      
+    </tr>
+    {% for varaus in varaukset %}
+    <tr>
+      <td>Varausviikko: {{ varaus.varausviikko }}</td>
+      <td>Huone_id: {{ varaus.huone_id }}</td>
+      <td>Asiakas_id: {{ varaus.asiakas_id }}</td>
+      <td>Huoneen hinta: {{ varaus.hinta }}</td>
+      <td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
+

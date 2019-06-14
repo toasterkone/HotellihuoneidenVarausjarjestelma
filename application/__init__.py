@@ -90,6 +90,10 @@ from application.auth import views
 from application.huoneet import models
 from application.huoneet import views
 
+#varaus-luokka kayttoon
+from application.varaukset import models
+from application.varaukset import views
+
 #kirjautuminen 2.
 from application.auth.models import User, Rooli
 

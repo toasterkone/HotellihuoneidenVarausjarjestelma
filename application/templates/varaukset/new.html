@@ -1,0 +1,72 @@
+  {% extends "layout.html" %}
+
+  {% block body %}
+  <form method="POST" action="{{ url_for('varaukset_create') }}">
+    <table>
+      <tr>
+	    <td>
+	      {{ form.varausviikko.label }}
+	    </td>
+	    <td>
+	      {{ form.varausviikko }}
+	    </td>
+	    <td>
+	      <ul>
+	        {% for error in form.varausviikko.errors %}
+	        <li>{{ error }}</li>
+	        {% endfor %}
+	      </ul>
+	    </td>
+      </tr>
+      <tr>
+	    <td>
+	      {{ form.huone_id.label }}
+	    </td>
+	    <td>
+	      {{ form.huone_id }}
+	    </td>
+	    <td>
+	      <ul>
+	        {% for error in form.huone_id.errors %}
+	        <li>{{ error }}</li>
+	        {% endfor %}
+	      </ul>
+	    </td>
+      </tr>
+      <tr>
+	    <td>
+	      {{ form.asiakas_id.label }}
+	    </td>
+	    <td>
+	      {{ form.asiakas_id }}
+	    </td>
+	    <td>
+	      <ul>
+	        {% for error in form.asiakas_id.errors %}
+	        <li>{{ error }}</li>
+	        {% endfor %}
+	      </ul>
+	    </td>
+      </tr>
+      <tr>
+	    <td>
+	      {{ form.hinta.label }}
+	    </td>
+	    <td>
+	      {{ form.hinta }}
+	    </td>
+	    <td>
+	      <ul>
+	        {% for error in form.hinta.errors %}
+	        <li>{{ error }}</li>
+	        {% endfor %}
+	      </ul>
+	    </td>
+      </tr>
+      <tr>
+	    <td colspan="3">
+	      <input type="submit" value="Tee varaus asiakkaalle"/>
+	    </td>
+      </tr>
+  </form>
+  {% endblock %}

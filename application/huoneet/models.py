@@ -28,6 +28,9 @@ class Huone(db.Model):
 
     #tahan lisataan viela liitostauluun viittaava viiteavain
     #varaus_id
+
+    #jokaiseen huoneeseen liitetään huoneen varaus-tiedot
+    varaukset = db.relationship("Varaus", backref='varaus2', lazy=True)
     
 
     def __init__(self, huonenumero, hinta, tyyppi):

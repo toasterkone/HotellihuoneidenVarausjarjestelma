@@ -7,9 +7,10 @@
     </tr>
     {% for huone in huoneet %}
     <tr>
-      <td>{{ huone.huonenumero }}</td>
-      <td>{{ huone.hinta }}</td>
-      <td>{{ huone.tyyppi }}</td>
+      <td>Huone_id: {{ huone.id }}</td>
+      <td>Huonenumero: {{ huone.huonenumero }}</td>
+      <td>Hinta: {{ huone.hinta }}</td>
+      <td>Tyyppi: {{ huone.tyyppi }}</td>
       <td>
     </tr>
     {% endfor %}

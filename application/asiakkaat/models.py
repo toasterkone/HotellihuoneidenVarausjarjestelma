@@ -18,6 +18,13 @@ class Asiakas(db.Model):
     #viiteavain viittaa account-tauluun
     account_id = db.Column(db.Integer, db.ForeignKey('account.id'),
                            nullable=False)
+
+
+
+    #jokaiseen asiakkaaseen liitetään asiakkaan varaus-tiedot
+    varaukset = db.relationship("Varaus", backref='varaus1', lazy=True)
+
+
     
 
     def __init__(self, etunimi, sukunimi, puhelinnumero, email):
