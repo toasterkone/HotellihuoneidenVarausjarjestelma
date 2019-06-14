@@ -78,6 +78,18 @@ Asiakkaan lisääminen vaatii kirjautumisen ja aloitussivun yläreunan "Lisää 
 
 - Huoneen lisäys onnistuu lomakkeella, johon syötetään huonenumero (kokonaisluku, joka vähintään 1), huoneen hinta (kokonaisluku, joka vähintään 1) ja huoneen tyyppi (merkkijono, joka vähintään 3 merkkiä pitkä).
 
+## Varauksen tekeminen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Huoneen_lisaaminen.png "Lomake, jolla varaus lisätään.")
+
+- Sivun yläosan "Lisää varaus"-linkkiä painamalla (kirjautuneena) voi tehdä varauksen. Syötä huone_id, asiakas_id, varausviikko ja hinta. Voit nähdä tarvittavat id:t ja hinnat sovelluksen sivuilta "Listaa huoneet" ja "Listaa asiakkaat".
+- Huom! Varaus tehdään kokonaiselle viikolle käyttäen viikkonumeroita. Voit varata huoneen viikoksi kerrallaan.
+
+## Varausten listaaminen
+
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Huoneiden_listaaminen.png "Varausten listaaminen")
+
+- Aloitussivun "Listaa varaukset"-linkkiä painamalla pääsee näkymään, jossa näytetään lisätyt varaukset.
+- Voit tarkastaa tästä, onko haluamasi huone vapaana haluttuun aikaan.
 
 ## Uloskirjautuminen
 

@@ -1,7 +1,7 @@
 # HotellihuoneidenVarausjarjestelma - dokumentaatio
 
 ## Linkki Herokussa olevaan sovellukseen
-["Herokussa oleva sovellus"](https://tsoha-varaussovellus.herokuapp.com/)
+[Herokussa oleva sovellus](https://tsoha-varaussovellus.herokuapp.com/)
 
 ## Aihe
 - Hotellien varausjärjestelmä
@@ -30,8 +30,10 @@
 - listaa huoneet
 - lisää huone
 - listaa huoneet
-- autorisointi
+- autorisointi (Huoneen lisääminen vaatii ADMIN-oikeudet, muut toiminnot vaativat joko KAYTTAJA-oikeudet tai ei mitään oikeuksia)
 - etusivulla monimutkainen kysely, joka tulostaa käyttäjät, joilla ei ole asiakkaita
+- Lisää varaus
+- Listaa varaukset
 
 
 
@@ -76,8 +78,21 @@ python run.py
 
 - onnistuu huoneiden listaaminen sivulla
 
+#### Varauksen lisääminen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Huoneen_lisaaminen.png "Lomake, jolla varaus lisätään.")
+
+- Vaatii kirjautumisen. Pitää syöttää huone_id, asiakas_id, huoneen hinta ja varausviikko.
+- painikkeen painaminen lisää varauksen.
+
+#### Varausten listaus
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Huoneiden_listaaminen.png "Varausten listaaminen")
+
+- Onnistuu "Listaa varaukset"-linkkiä painamalla.
+
+
+
 #### Schema 
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema.png "Kuva tietokannan skeemasta")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/schema.png "Kuva tietokannan nykyisestä skeemasta")
 
 
 

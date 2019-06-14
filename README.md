@@ -33,6 +33,7 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 - Huone
 - account(käyttäjä-taulu)
 - Rooli
+- Huone
 
 
 ## Kuva tavoitetietokantakaaviosta
@@ -54,14 +55,16 @@ Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huone
 
 ## Tämänhetkiset toiminnot sovelluksessa
 - kirjautuminen
-- rekisteröityminen
+- rekisteröityminen (jonka jälkeen kayttaja-oikeudet)
 - listaa asiakkaat
 - poista asiakas
 - muokkaa asiakkaan tiedot
 - lisää huone
 - listaa huoneet
-- monimutkainen kysely etusivulla, joka näyttää käyttäjät, joilla ei ole asiakkaita
-- autorisointi
+- monimutkainen kysely etusivulla, joka näyttää käyttäjät, joilla ei ole asiakkaita. Täyttää kurssin vaatimukset.
+- autorisointi (Huoneen lisääminen vaatii ADMIN-oikeudet, muut toiminnot vaativat joko KAYTTAJA-oikeudet tai ei mitään oikeuksia).
+- Varauksen tekeminen
+- Varausten listaaminen
 
 ## Linkki kayttotapauksiin
 [kayttotarkoitukset sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
