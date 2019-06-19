@@ -5,26 +5,24 @@ Sovellusta voi käyttää nettiosoitteessa [https://tsoha-varaussovellus.herokua
 - Lokaalin asennuksen ohjeet tiedostossa asennusohje.md
 
 
-## Sovelluksessa olevat toiminnot
-- kirjautuminen
-- rekisteröityminen
-- lisää asiakas
-- muuta asiakkaan tietoja
-- poista asiakas
-- listaa huoneet
-- lisää huone
-- listaa huoneet
-- autorisointi (Huoneen lisääminen vaatii ADMIN-oikeudet, muut toiminnot vaativat joko KAYTTAJA-oikeudet tai ei mitään oikeuksia)
-- etusivulla monimutkainen kysely, joka tulostaa käyttäjät, joilla ei ole asiakkaita
+## Tämä dokumentti sisältää ohjeet seuraavia toiminnallisuuksia varten
+- Kirjautuminen
+- Rekisteröityminen
+- Asiakkaan lisääminen, poistaminen, tietojen muokkaus ja asiakkaiden listaus
+- Lisää huone
+- Listaa huoneet
 - Lisää varaus
 - Listaa varaukset
+- Uloskirjautuminen
 
 
 ## Aloitussivu
 
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_uusin.png "Kuva aloitussivusta")
+
 Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu alla olevan kuvan mukainen näkymä. Sivun yläreunassa näkyvät sovelluksen toiminnallisuudet. Aloitussivulla näytetään myös käyttäjät, joilla ei ole yhtään asiakasta. 
 
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_uusin.png "Kuva aloitussivusta")
+
 
 
 ## Kirjautuminen
@@ -34,18 +32,17 @@ Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu alla olevan kuvan m
 
 Sovellukseen pääsee muutkin kuin kirjautuneet, mutta tietyt toiminnallisuudet, kuten asiakkaan ja huoneen lisäys vaativat kirjautumisen. Listaavat toiminnallisuudet eivät tarvitse kirjautumista. Sovelluksessa on kahta eri tyyppiä käyttäjätilien suhteen: admin-oikeudet omaava tili, joka pystyy lisäämään huoneen ja käyttäjä-oikeudet omaava tili, joka pystyy tekemään kaiken muun paitsi lisäämään huoneen. Herokussa sijaitsevassa sovelluksessa on valmiina admin- ja käyttäjä-tilit, joiden tiedot ovat seuraavat:
 
+- admin-oikeudet omaava tili
 
 | Username | Password |
 |:--------:|:--------:|
 | hello    |    world |
 
-- admin-oikeudet omaava tili
+- käyttäjä-oikeudet omaava tili
 
 | Username | Password |
 |:--------:|:--------:|
 | hei      |   maailma|
-
-- käyttäjä-oikeudet omaava tili
 
 Kirjautuminen tapahtuu sivun oikean yläreunan "Kirjaudu"-linkkiä painamalla ja uloskirjautuminen tapahtuu "Kirjaudu ulos"-linkkiä painamalla.
 
@@ -83,12 +80,6 @@ Asiakkaan poistaminen tapahtuu painamalla punaista delete-nappia poistettavaksi 
 Asiakkaan lisääminen vaatii kirjautumisen ja aloitussivun yläreunan "Lisää asiakas"-linkin painamisen. Lisäämissivulla pitää määrittää asiakkaan etunimi, sukunimi, puhelinnumero ja sähköpostiosoite. Etu- ja sukunimen pitää olla vähintään 2 merkkiä pitkiä. Puhelinnumeron pitää olla vähintään 5 merkkiä pitkä. Sähköpostin pitää olla vähintään 3 merkkiä pitkä. Asiakkaan lisäys tapahtuu tietojen lisäyksen jälkeen painamalla "Lisää uusi asiakas"-painiketta. 
 
 
-## Huoneiden listaaminen
-
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_huoneet.png "Huoneiden listaus, huonenumero, hinta, tyyppi")
-
-- Aloitussivun "Listaa huoneet"-linkkiä painamalla pääsee näkymään, jossa näytetään lisätyt huoneet. Huoneet listataan riveittäin siten, että ensin on huonenumero, toiseksi huoneen hinta ja viimeiseksi huoneen tyyppi.
-
 ## Huoneen lisääminen
 
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Lis%C3%A4%C3%A4_huone.png "Lomake, jolla huone lisätään.")
@@ -96,6 +87,12 @@ Asiakkaan lisääminen vaatii kirjautumisen ja aloitussivun yläreunan "Lisää 
 - Aloitussivun linkkiä "Lisää huone" painamalla avautuu huoneen lisäämisnäkymä, jos on kirjautunut admin-oikeuksilla. Jos et ole tehnyt tätä, niin sinut ohjataan automaattisesti kirjautumissivulle.
 
 - Huoneen lisäys onnistuu lomakkeella, johon syötetään huonenumero (kokonaisluku, joka vähintään 1), huoneen hinta (kokonaisluku, joka vähintään 1) ja huoneen tyyppi (merkkijono, joka vähintään 3 merkkiä pitkä).
+
+## Huoneiden listaaminen
+
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_huoneet.png "Huoneiden listaus, huonenumero, hinta, tyyppi")
+
+- Aloitussivun "Listaa huoneet"-linkkiä painamalla pääsee näkymään, jossa näytetään lisätyt huoneet. Huoneet listataan riveittäin siten, että ensin on huonenumero, toiseksi huoneen hinta ja viimeiseksi huoneen tyyppi.
 
 ## Varauksen tekeminen
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Varauksen_tekeminen.png "Lomake, jolla varaus lisätään.")
@@ -112,7 +109,7 @@ Asiakkaan lisääminen vaatii kirjautumisen ja aloitussivun yläreunan "Lisää 
 
 ## Uloskirjautuminen
 
-Uloskirjautuminen tapahtuu painamalla sivuston oikean ylänurkan "Kirjaudu ulos"-linnkiä. Tämä kirjaa käyttäjän automaattisesti ulos.
+Uloskirjautuminen tapahtuu painamalla sivuston oikean ylänurkan "Kirjaudu ulos"-linkkiä. Tämä kirjaa käyttäjän automaattisesti ulos.
 
 
 

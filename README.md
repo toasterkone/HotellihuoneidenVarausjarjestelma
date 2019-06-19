@@ -1,101 +1,91 @@
 # VarausApp
 
-# Tietokantasovellus-kurssi
+## Tietokantasovellus-kurssi, alkukesä 2019
 
+## Aihe
+- Hotellin varausjärjestelmä
+
+## Aihekuvaus
+
+Sovellus toimii hotellin järjestelmänä, jossa voi hallinnoida asiakkaita, varauksia ja huoneita.
+
+Varausjärjestelmää käyttävät hotellin työntekijät ja hotellinomistaja. Sovellus sisältää toiminnallisuudet lisätä asiakkaita, huoneita ja varauksia. Sovelluksessa on myös mahdollista listata asiakkaat, huoneet ja varaukset. Asiakkaisiin liittyy CRUD-toiminnallisuudet eli asiakkaan voi lisätä, asiakkaan tietoja voi muuttaa, asiakkaat voi listata ja asiakkaan voi poistaa. 
+
+Sovellus tarjoaa uudelle työntekijälle mahdollisuuden rekisteröityä sovelluksen käyttäjäksi eli työntekijä rekisteröityy antamalla koko nimensä (etu- ja sukunimi), sekä käyttäjänimen ja salasanan. Rekisteröityessään työntekijä ei saa ADMIN-oikeuksia, mutta hän pystyy tekemään kaiken muun sovelluksessa paitsi huoneen lisäyksen. Työntekijät pystyvät käyttämään sovellusta ilman kirjautumista, mutta tässä tilanteessa he pystyvät vain käyttämään listaustoimintoja. Hotellinomistajalla on ADMIN-oikeudet eli hän pystyy lisäämään huoneita tietokantaan.
+ 
 ## Linkki Herokussa sijaitsevaan sovellukseen
 [Herokussa oleva sovellus](https://tsoha-varaussovellus.herokuapp.com/)
 
 
-## HotellihuoneidenVarausjarjestelma
+## Dokumentaatio
 
-## Aihe
-- Hotellien varausjärjestelmä
-
-## Aihekuvaus
-
-Hotellien varausjärjestelmä sisältää huoneita halutun määrän ja huoneita voidaan lisätä halutessa. Huoneita voidaan varata ja huoneille voidaan ostaa lisavarusteita. Huoneita on eri hintaisia ja tyyppisiä. Varauksia voidaan perua. Varausjärjestelmä sisältää alustavasti neljä tietokantataulua: asiakas, hotellihuone, lisavaruste ja varaus. Hotellihuoneet varataan aina viikko kerrallaan ja varausajoista pidetään kirjaa viikkonumeroiden avulla.
-
-Asiakkaasta tallennetaan ainakin etu- ja sukunimi, puhelinnumero, sähköposti. Hotellihuoneella on huonenumero, hinta, tyyppi. Lisävarusteella on hinta, nimi ja tieto mihin varaukseen se liittyy.
-
-Huoneen varausta varten pitää asiakkaan maksaa varausmaksu, joka riippuu huoneesta. 
-
-
-## TavoiteTietokantataulut
-- Asiakas
-- Hotellihuone 
-- Lisavaruste
-- Varaus
-- account(käyttäjä-taulu)
-- Rooli
-
-## Tämänhetkiset Tietokantataulut
-- Asiakas
-- Huone
-- account(käyttäjä-taulu)
-- Rooli
-- Huone
-
-
-## Kuva tavoitetietokantakaaviosta
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_2.png "Tavoitetietokantakaavio")
-
-## Kuva tämänhetkisestä tietokantakaaviosta
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_5.png "Toteutunut tietokantakaavio")
-
-## TavoiteToiminnot
-
-- kirjautuminen
-- Lisaa huone
-- listaa huoneet
-- listaa asiakkaat
-- listaa varaukset
-- tee varaus
-- peru varaus
-- lisävarusteen osto
-
-## Tämänhetkiset toiminnot sovelluksessa
-- kirjautuminen
-- Asiakas-taulun CRUD-toiminnot (alla listattuna)
-- rekisteröityminen (jonka jälkeen kayttaja-oikeudet)
-- listaa asiakkaat
-- poista asiakas
-- muokkaa asiakkaan tiedot
-- lisää huone
-- listaa huoneet
-- monimutkainen kysely etusivulla, joka näyttää käyttäjät, joilla ei ole asiakkaita. Täyttää kurssin vaatimukset.
-- autorisointi (Huoneen lisääminen vaatii ADMIN-oikeudet, muut toiminnot vaativat joko KAYTTAJA-oikeudet tai ei mitään oikeuksia).
-- Varauksen tekeminen
-- Varausten listaaminen
-
-## Linkki dokumentaatiokansioon
-[dokumentaatiota sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
-
-
-## Linkki kayttotapauksiin
-[käyttötarkoituksia-tiedosto](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/dokumentaatio.md )
-
-
-## Linkki kayttöohjeisiin
-[käyttöohje-tiedosto](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kaytto_ohje.md )
-
-## Linkki asennusohjeeseen
-[asennusohje-tiedosto](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/asennusohje.md )
+- [Dokumentaatiota sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
+- [Käyttöohjeet](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kaytto_ohje.md )
+- [Asennusohjeet](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/asennusohje.md )
+- [Yleistietoa](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/dokumentaatio.md )
+- tähän linkki create table -lauseisiin
+- tähän linkki user storyihin
+- tähän linkki omiin kokemuksiin
 
 ## Admin-oikeudet omaava käyttäjä ja kirjautumiseen vaaditut tiedot
+
+- Tällä tilillä pystyy käyttämään kaikkia verkkosovelluksen toimintoja.
 
 | Username | Password |
 |:--------:|:--------:|
 | hello    |    world |
 
-- Tällä tilillä pystyy käyttämään kaikkia verkkosovelluksen toimintoja
-
 ## User-oikeudet omaava käyttäjä ja kirjautumiseen vaaditut tiedot
+
+- Tällä tilillä pystyy käyttämään kaikkia verkkosovelluksen toimintoja, paitsi huoneen lisäystä.
 
 | Username | Password |
 |:--------:|:--------:|
 | hei      |   maailma|
 
-- Tällä tilillä pystyy käyttämään kaikkia verkkosovelluksen toimintoja paitsi huoneen lisäystä
+
+
+## Toteutuneet ominaisuudet
+
+- Lisää asiakas
+- Lisää huone
+- Lisää varaus
+- Listaa asiakkaat
+- Listaa huoneet
+- Listaa varaukset
+- CRUD-toiminnallisuudet asiakkaalle (lisäys, muokkaus, listaus ja poistaminen)
+- Kirjautuminen 
+- Rekisteröityminen (luo uudet USER-käyttäjän)
+- Yhteenvetokysely etusivulla, joka kertoo käyttäjät, jotka eivät ole lisänneet asiakkaita
+- Autorisointi (huoneen lisääminen vaatii ADMIN-oikeudet, muut toiminnot vaativat joko USER-oikeudet tai ei mitään oikeuksia). 
+- Osa tiedoista validoidaan. Esimerkiksi asiakkaan tietojen pitää täyttää tietyt vaatimukset.
+
+## Toteutumattomat ominaisuudet ja jatkokehitys
+
+- Asiakkaan varausten hakeminen nimellä.
+- Varausten hakeminen tietylle aikavälille.
+- Listasten (asiakkaat, huoneet, varaukstet) sivutus.
+- Varausajan muuttaminen realistisemmaksi. Tällä hetkellä huone varataan aina viikoksi kerrallaan, todellisempaa olisi, jos huone varattaisiin haluttujen päivien ajaksi.
+- Lisävaruste-taulu, joka liittyisi varaus-tauluun. Asiakas voisi varata huoneelle haluamiansa lisävarusteita.
+- Admin-käyttäjälle lisää tominnallisuuksia, kuten muuta toisten käyttäjien oikeuksia ja poista käyttäjiä.
+- Varauksen peruminen.
+- Sovelluksen tuominen nykyaikaan -- nykyisessä muodossaan ei ole kovin näyttävä. Eli sivuston tyylittelyn/käytettävyyden parantaminen.
+- Sovelluksen muuttaminen siten, että sitä voi käyttää asiakkaat ja työntekijät/hotellinomistaja. Asiakkaan rekisteröityminen lisäisi asiakkaan automaattisesti asiakas-tauluun. Asiakkaalla vain oikeudet listata huoneet, tehdä varaus ja listata omat varauksensa.
+- Hinta-attribuuttien muuttaminen kokonaisluvuista realistisemmiksi esimerkiksi Numeric-tyyppisiksi.
+
+## Normalisointi
+
+Tietokantaa ei ole normalisoitu 3:een normaalimuotoon, sillä esimerkiksi varaus-taulussa on ns. ylimääräistä tietoa (hinta). Tämä sen takia, että tietyissä tauluissa käytettävyys helpottuu, kun sisällytetään ylimääräistä tietoa.
+
+## Sovelluksen tietokantataulut
+- Asiakas
+- Huone
+- account(käyttäjä-taulu)
+- Rooli
+- Huone
+
+## Sovelluksen tietokantakaavio
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_5.png "Toteutunut tietokantakaavio")
 
 ## Tämänhetkinen Schema
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Uusin_Schema.png "Nykyinen Schema")
