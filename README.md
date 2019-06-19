@@ -25,6 +25,7 @@ Sovellus tarjoaa uudelle työntekijälle mahdollisuuden rekisteröityä sovelluk
 - [Create Table -lauseet](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/SQL_Create_Table_lauseet.md )
 - [Käyttäjätarinat](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/user_stories.md )
 - [Omat kokemukset](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/omat_kokemukset.md )
+- [Tietokantakaavio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_tietokantakaavio.png )
 
 
 ## Admin-oikeudet omaava käyttäjä ja kirjautumiseen vaaditut tiedot
@@ -83,12 +84,6 @@ Tietokantaa ei ole normalisoitu 3:een normaalimuotoon, sillä esimerkiksi varaus
 - account(käyttäjä-taulu)
 - Rooli
 - Huone
-
-## Sovelluksen tietokantakaavio
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_5.png "Toteutunut tietokantakaavio")
-
-## Tämänhetkinen Schema
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Uusin_Schema.png "Nykyinen Schema")
 
 
 
