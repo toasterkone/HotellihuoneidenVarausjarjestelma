@@ -22,10 +22,10 @@ Sovellus tarjoaa uudelle työntekijälle mahdollisuuden rekisteröityä sovelluk
 - [Dokumentaatiota sisaltava kansio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/tree/master/documentation )
 - [Käyttöohjeet](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kaytto_ohje.md )
 - [Asennusohjeet](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/asennusohje.md )
-- [Yleistietoa](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/dokumentaatio.md )
-- tähän linkki create table -lauseisiin
-- tähän linkki user storyihin
-- tähän linkki omiin kokemuksiin
+- [Create Table -lauseet](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/SQL_Create_Table_lauseet.md )
+- [Käyttäjätarinat](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/user_stories.md )
+- [Omat kokemukset](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/omat_kokemukset.md )
+
 
 ## Admin-oikeudet omaava käyttäjä ja kirjautumiseen vaaditut tiedot
 
