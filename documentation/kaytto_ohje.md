@@ -13,6 +13,7 @@ Sovellusta voi käyttää nettiosoitteessa [https://tsoha-varaussovellus.herokua
 - Listaa huoneet
 - Lisää varaus
 - Listaa varaukset
+- Peru varaus
 - Uloskirjautuminen
 
 
@@ -106,6 +107,11 @@ Asiakkaan lisääminen vaatii kirjautumisen ja aloitussivun yläreunan "Lisää 
 
 - Aloitussivun "Listaa varaukset"-linkkiä painamalla pääsee näkymään, jossa näytetään lisätyt varaukset.
 - Voit tarkastaa tästä, onko haluamasi huone vapaana haluttuun aikaan.
+
+## Varauksen peruminen
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_varaukset.png "Varausten listaaminen")
+
+- Aloitussivun "Listaa varaukset"-linkkiä painamalla pääseen näkymään, jossa näytetään lisätyt varaukset. Tässä näkymässä voi perua halutun varauksen painamalla kyseisen varauksen rivin kohdalla olevaa punaista nappia, jossa lukee "peru varaus". Tämä toiminto vaatii kirjautumisen.
 
 ## Uloskirjautuminen
 

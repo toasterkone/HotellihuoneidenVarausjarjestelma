@@ -70,5 +70,16 @@ def varaukset_create():
     return redirect(url_for("varaukset_index"))
 
 
+#varauksen poistaminen, vaatii kirjautumisen
+@app.route("/varaukset/<varaus_id>/delete", methods=["GET"])
+@login_required 
+def varaukset_poista(varaus_id):
+
+    db.session.delete(Varaus.query.get(varaus_id))
+    db.session().commit()
+
+    return redirect(url_for("varaukset_index"))
+
+
 
 

@@ -54,6 +54,7 @@ Sovellus tarjoaa uudelle työntekijälle mahdollisuuden rekisteröityä sovelluk
 - Listaa asiakkaat
 - Listaa huoneet
 - Listaa varaukset
+- Peru varaus 
 - CRUD-toiminnallisuudet asiakkaalle (lisäys, muokkaus, listaus ja poistaminen)
 - Kirjautuminen 
 - Rekisteröityminen (luo uudet USER-käyttäjän)
@@ -64,12 +65,12 @@ Sovellus tarjoaa uudelle työntekijälle mahdollisuuden rekisteröityä sovelluk
 ## Toteutumattomat ominaisuudet ja jatkokehitys
 
 - Asiakkaan varausten hakeminen nimellä.
+- Yhdellä varauksella voisi varata useita huoneita.
 - Varausten hakeminen tietylle aikavälille.
 - Listasten (asiakkaat, huoneet, varaukstet) sivutus.
 - Varausajan muuttaminen realistisemmaksi. Tällä hetkellä huone varataan aina viikoksi kerrallaan, todellisempaa olisi, jos huone varattaisiin haluttujen päivien ajaksi.
 - Lisävaruste-taulu, joka liittyisi varaus-tauluun. Asiakas voisi varata huoneelle haluamiansa lisävarusteita.
 - Admin-käyttäjälle lisää tominnallisuuksia, kuten muuta toisten käyttäjien oikeuksia ja poista käyttäjiä.
-- Varauksen peruminen.
 - Sovelluksen tuominen nykyaikaan -- nykyisessä muodossaan ei ole kovin näyttävä. Eli sivuston tyylittelyn/käytettävyyden parantaminen.
 - Sovelluksen muuttaminen siten, että sitä voi käyttää asiakkaat ja työntekijät/hotellinomistaja. Asiakkaan rekisteröityminen lisäisi asiakkaan automaattisesti asiakas-tauluun. Asiakkaalla vain oikeudet listata huoneet, tehdä varaus ja listata omat varauksensa.
 - Hinta-attribuuttien muuttaminen kokonaisluvuista realistisemmiksi esimerkiksi Numeric-tyyppisiksi.

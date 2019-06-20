@@ -62,6 +62,13 @@ SELECT * FROM huone;
 SELECT * FROM varaus;
 ```
 
+8. Haluan poistaa asiakkaan peruman varauksen
+```
+DELETE FROM varaus
+WHERE id = 123;
+```
+jossa id on peruttavan varauksen id.
+
 ## Hotellinomistaja (ADMIN-oikeudet)
 - Pystyn tekemään kaikki yllä mainitut tehtävät.
 

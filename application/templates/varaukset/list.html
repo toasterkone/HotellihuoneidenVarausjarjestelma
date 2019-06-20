@@ -12,6 +12,10 @@
       <td>Asiakas_id: {{ varaus.asiakas_id }}</td>
       <td>Huoneen hinta: {{ varaus.hinta }}</td>
       <td>
+        <form method="GET" action="{{ url_for('varaukset_poista', varaus_id=varaus.id) }}">
+          <input type="submit" class="btn btn-danger btn-sm" value="Peru varaus" />
+        </form>
+      </td>
     </tr>
     {% endfor %}
   </table>
