@@ -109,7 +109,7 @@ Asiakkaan lisääminen vaatii kirjautumisen ja aloitussivun yläreunan "Lisää 
 - Voit tarkastaa tästä, onko haluamasi huone vapaana haluttuun aikaan.
 
 ## Varauksen peruminen
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_varaukset.png "Varausten listaaminen")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_varaukset.png "varauksen peruminen")
 
 - Aloitussivun "Listaa varaukset"-linkkiä painamalla pääseen näkymään, jossa näytetään lisätyt varaukset. Tässä näkymässä voi perua halutun varauksen painamalla kyseisen varauksen rivin kohdalla olevaa punaista nappia, jossa lukee "peru varaus". Tämä toiminto vaatii kirjautumisen.
 
