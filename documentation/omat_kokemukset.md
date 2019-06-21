@@ -11,7 +11,7 @@ Sain myös kaikki muut eri osien vaaditut toiminnallisuudet paitsi rekisteröity
 
 Varauksen lisääminen vaatii, että käyttäjä muistaa asiakkaan id:n, sekä huoneen id:n ja hinnan. Tämä on hieman kömpelöä ja olisi parempi vaihtoehto, että käyttäjä voisi ensin tehdä haun vapaista tietyn tyyppisistä huoneista tietylle aikavälille ja valita dropdown menu:sta asiakkaan. Näiden toimintojen jälkeen nappia painamalla tehtäisiin varaus.
 
-Asiakkaiden ja huoneiden listaus on nykyisessä muodossaan hieman alkeellisen näköistä, eikä näissä listauksissa voi rajata hakutuloksia.
+Asiakkaiden, huoneiden ja varausten listaamisessa ei voi rajata hakutuloksia.
 
 ## Sovelluksen puuttuvat ominaisuudet
 

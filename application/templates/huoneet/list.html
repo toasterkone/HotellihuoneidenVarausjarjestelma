@@ -1,19 +1,28 @@
 {% extends "layout.html" %}
-
 {% block body %}
-  <table>
-    <tr>
-      <th>Huone</th>      
-    </tr>
-    {% for huone in huoneet %}
-    <tr>
-      <td>Huone_id: {{ huone.id }}</td>
-      <td>Huonenumero: {{ huone.huonenumero }}</td>
-      <td>Hinta: {{ huone.hinta }}</td>
-      <td>Tyyppi: {{ huone.tyyppi }}</td>
-      <td>
-    </tr>
-    {% endfor %}
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Hotellin huoneet</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Huonenumero</th>
+        <th>Hinta</th>
+        <th>Tyyppi</th>
+      </tr>
+    </thead>
+    <tbody>    
+      {% for huone in huoneet %}  
+      <tr>
+        <td>{{ huone.id }}</td>
+        <td>{{ huone.huonenumero }}</td>
+        <td>{{ huone.hinta }}</td>
+        <td>{{ huone.tyyppi }}</td>       
+      </tr>
+      {% endfor %}
+    </tbody>
   </table>
 {% endblock %}
-

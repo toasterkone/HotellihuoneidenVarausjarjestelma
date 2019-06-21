@@ -64,26 +64,27 @@ Sovelluksessa on mahdollista rekisteröityä aloitussivun oikean ylänurkan "Rek
 - Huom! Kun rekisteröidyt niin sinulla on vain käyttäjä-tilin oikeudet, eli et pysty lisäämään huoneita.
 
 
-## Asiakkaiden listaaminen, tietojen muuttaminen ja asiakkaan poistaminen
+## Asiakkaiden listaaminen, tietojen muuttaminen ja asiakkaan poistaminen (CRUD)
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_asiakkaat.png "CRUD: Asiakkaiden listaaminen, muokkaaminen ja poistaminen")
 
-
-- Asiakkaan poistaminen vaatii kirjautumisen. Käyttäjä voi muokata ja poistaa asiakkaan. Kuka vaan voi nähdä asiakkaiden listauksen.
+- Asiakkaan poistaminen ja asiakkaan tietojen muokkaaminen vaatii kirjautumisen. Kuka vaan voi nähdä asiakkaiden listauksen.
 
 - Asiakkaiden listaaminen
 
-Aloitussivun "Listaa Asiakkaat"-linkkiä painamalla avautuu näkymä, jossa listataan kaikki asiakkaat. Tietojen järjestys on seuraava: etunimi, sukunimi, puhelinnumero ja sähköpostiosoite.
+Aloitussivun "Listaa Asiakkaat"-linkkiä painamalla avautuu näkymä, jossa listataan kaikki asiakkaat.
 
 - Asiakkaan tietojen muokkaaminen
 
-Voit muuttaa vain yhden asiakkaan yhtä tietoa kerrallaan. Esimerkiksi haluttaessa vaihtaa asiakkaan puhelinnumeroa pitää syöttää uusi numero kolmanteen tekstikenttään ja painaa sen alla olevaa "Vaihda puh.num."-painiketta. Tämä muuttaa asiakkaan puhelinnumeron. Saman voi tehdä muille tiedoille.
+Asiakkaiden listaus-sivulla sijaitsee muokkaa-nappi, jota painaminen kirjautuneena vie lomakkeelle, joka on alla kuvassa. Tässä voi kirjoittaa päivitetyt tiedot ja painaa päivitä asiakkaan tiedot -nappia, jolloin asiakkaan tiedot päivittyvät.
+
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_asiakkaat.png "Asiakkaan tietojen päivittäminen")
 
 - Asiakkaan poistaminen
 
 Asiakkaan poistaminen tapahtuu painamalla punaista delete-nappia poistettavaksi halutun asiakkaan rivin kohdalla. Tämä toiminto vaatii kirjautumisen.
 
 
-## Asiakkaan lisääminen
+## Asiakkaan lisääminen (CRUD)
 
 ![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Lis%C3%A4%C3%A4_asiakas.png "Lomake, jolla asiakas lisätään.")
 

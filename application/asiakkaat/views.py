@@ -3,12 +3,12 @@
 
 #uuden asiakkaan luominen asettaa myös käyttäjän luotavalle asiakkaalle. 
 
-from application import app, db
+from application import app, db, login_required, login_manager
 from flask import redirect, render_template, request, url_for
 from application.asiakkaat.models import Asiakas
 from application.asiakkaat.forms import AsiakasForm
 
-from flask_login import login_required, current_user
+from flask_login import current_user#, login_required 
 
 
 
@@ -22,13 +22,13 @@ def asiakkaat_index():
 
 #nayttaa kayttajalle lomakkeen, jolla luodaan asiakkaita
 @app.route("/asiakkaat/new/")
-@login_required
+@login_required()
 def asiakkaat_form():
     return render_template("asiakkaat/new.html", form = AsiakasForm())
 
 #lisaa uuden asiakkaan pyynnossa lahetetyn lomakkeen perusteella
 @app.route("/asiakkaat/", methods=["POST"])
-@login_required
+@login_required()
 def asiakkaat_create():
 
     #Asiakas-oliolle haetaan tekstikentista attribuutit
@@ -63,33 +63,37 @@ def asiakkaat_create():
 
 
 #metodi paivittaa kaikki tiedot, jotka halutaan muuttaa
-@app.route("/asiakkaat/<asiakas_id>/", methods=["POST"])
+@app.route("/asiakkaat/<asiakas_id>/muokkaa/", methods=["GET", "POST"])
+@login_required()
 def asiakkaat_update_tiedot(asiakas_id):
+    #jos GET
+    if request.method == "GET":
 
-    a = Asiakas.query.get(asiakas_id)
+        asiakas = Asiakas.query.get(asiakas_id)
+        form = AsiakasForm(obj=asiakas)   
 
-    if request.form.get("sukunimi") is not None:
-        a.sukunimi = request.form.get("sukunimi") #hakee tekstikenttaan syotetyn merkkijonon
-    if request.form.get("etunimi") is not None:
+        return render_template("asiakkaat/muokkaa.html", form=form, asiakas_id=asiakas_id)
+    #jos POST
+    form = AsiakasForm(request.form)
+    asiakas = Asiakas.query.get(asiakas_id) 
+      
+    if not form.validate():
+        return render_template("asiakkaat/muokkaa.html", form=form, asiakas_id=asiakas_id)
 
-        a.etunimi = request.form.get("etunimi") #hakee tekstikenttaan syotetyn merkkijonon
+    asiakas.etunimi = form.etunimi.data
+    asiakas.sukunimi = form.sukunimi.data
+    asiakas.puhelinnumero = form.puhelinnumero.data
+    asiakas.email = form.email.data
 
-    if request.form.get("email") is not None:
 
-        a.email = request.form.get("email") #hakee tekstikenttaan syotetyn merkkijonon
-
-    if request.form.get("puhelinnumero") is not None:
-        a.puhelinnumero = request.form.get("puhelinnumero") #hakee tekstikenttaan syotetyn merkkijonon
-
-  
     db.session().commit()
-  
+
     return redirect(url_for("asiakkaat_index"))
 
 
 #asiakkaan poistaminen, vaatii kirjautumisen
 @app.route("/asiakkaat/<asiakas_id>/delete", methods=["GET"])
-@login_required 
+@login_required() 
 def asiakkaat_delete(asiakas_id):
 
     db.session.delete(Asiakas.query.get(asiakas_id))

@@ -1,23 +1,33 @@
 {% extends "layout.html" %}
-
 {% block body %}
-  <table>
-    <tr>
-      <th>Varaus</th>      
-    </tr>
-    {% for varaus in varaukset %}
-    <tr>
-      <td>Varausviikko: {{ varaus.varausviikko }}</td>
-      <td>Huone_id: {{ varaus.huone_id }}</td>
-      <td>Asiakas_id: {{ varaus.asiakas_id }}</td>
-      <td>Huoneen hinta: {{ varaus.hinta }}</td>
-      <td>
-        <form method="GET" action="{{ url_for('varaukset_poista', varaus_id=varaus.id) }}">
-          <input type="submit" class="btn btn-danger btn-sm" value="Peru varaus" />
-        </form>
-      </td>
-    </tr>
-    {% endfor %}
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Huoneiden varaukset</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr>
+        <th>Varausviikko</th>
+        <th>Huone_id</th>
+        <th>Asiakas_id</th>
+        <th>Huoneen hinta</th>
+      </tr>
+    </thead>
+    <tbody>    
+      {% for varaus in varaukset %}  
+      <tr>
+        <td>{{ varaus.varausviikko }}</td>
+        <td>{{ varaus.huone_id }}</td>
+        <td>{{ varaus.asiakas_id }}</td>
+        <td>{{ varaus.hinta }}</td>    
+        <td>
+          <form method="GET" action="{{ url_for('varaukset_poista', varaus_id=varaus.id) }}">
+            <input type="submit" class="btn btn-danger btn-sm" value="Peru varaus" />
+          </form>
+        </td>   
+      </tr>
+      {% endfor %}
+    </tbody>
   </table>
 {% endblock %}
-

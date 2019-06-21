@@ -1,44 +1,41 @@
 {% extends "layout.html" %}
 
 {% block body %}
-  <table>
-    <tr>
-      <th>Asiakas</th>      
-    </tr>
-    {% for asiakas in asiakkaat %}
-    <tr>
-      <td>id:{{ asiakas.id }}</td>
-      <td>{{ asiakas.etunimi }}</td>
-      <td>{{ asiakas.sukunimi }}</td>
-      <td>{{ asiakas.puhelinnumero }}</td>
-      <td>{{ asiakas.email }}</td>
-      <td>
-	    <form method="POST" action="{{ url_for('asiakkaat_update_tiedot', asiakas_id=asiakas.id) }}">
-          <input type="text" name="etunimi"/>  
-	      <input type="submit" value="Vaihda etunimi"/>
-	    </form>
-      <td>
-	    <form method="POST" action="{{ url_for('asiakkaat_update_tiedot', asiakas_id=asiakas.id) }}">
-          <input type="text" name="sukunimi"/>  
-	      <input type="submit" value="Vaihda sukunimi"/>
-	    </form>
-      <td>
-	    <form method="POST" action="{{ url_for('asiakkaat_update_tiedot', asiakas_id=asiakas.id) }}">
-          <input type="text" name="puhelinnumero"/>  
-	      <input type="submit" value="Vaihda puh.num."/>
-	    </form>
-      <td>
-	    <form method="POST" action="{{ url_for('asiakkaat_update_tiedot', asiakas_id=asiakas.id) }}">
-          <input type="text" name="email"/>  
-	      <input type="submit" value="Vaihda email"/>
-	    </form>
-      <td>
-        <form method="GET" action="{{ url_for('asiakkaat_delete', asiakas_id=asiakas.id) }}">
-          <input type="submit" class="btn btn-danger btn-sm" value="delete" />
-        </form>
-      </td>
-    </tr>
-    {% endfor %}
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Hotellin asiakkaat</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Etunimi</th>
+        <th>Sukunimi</th>
+        <th>Puhelinnumero</th>
+        <th>Sähköposti</th>
+      </tr>
+    </thead>
+    <tbody>    
+      {% for asiakas in asiakkaat %}  
+      <tr>
+        <td>{{ asiakas.id }}</td>
+        <td>{{ asiakas.etunimi }}</td>
+        <td>{{ asiakas.sukunimi }}</td>
+        <td>{{ asiakas.puhelinnumero }}</td>
+        <td>{{ asiakas.email }}</td>   
+        <td>
+          <form method="GET" action="{{ url_for('asiakkaat_update_tiedot', asiakas_id = asiakas.id) }}">
+            <input type="submit" value="muokkaa"/>
+          </form>
+        </td>
+        <td>
+          <form method="GET" action="{{ url_for('asiakkaat_delete', asiakas_id=asiakas.id) }}">
+            <input type="submit" class="btn btn-danger btn-sm" value="delete" />
+          </form>
+        </td>  
+      </tr>
+      {% endfor %}
+    </tbody>
   </table>
 {% endblock %}
-
