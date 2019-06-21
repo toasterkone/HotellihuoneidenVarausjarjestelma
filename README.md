@@ -69,7 +69,7 @@ Sovellus tarjoaa uudelle työntekijälle mahdollisuuden rekisteröityä sovelluk
 - Varausten hakeminen tietylle aikavälille.
 - Listasten (asiakkaat, huoneet, varaukstet) sivutus.
 - Varausajan muuttaminen realistisemmaksi. Tällä hetkellä huone varataan aina viikoksi kerrallaan, todellisempaa olisi, jos huone varattaisiin haluttujen päivien ajaksi.
-- Lisävaruste-taulu, joka liittyisi varaus-tauluun. Asiakas voisi varata huoneelle haluamiansa lisävarusteita.
+- Lisävaruste-taulu, johon liittyisi liitostaulu huoneLisavaruste, joka liittyisi huone-tauluun. Hotellinomistaja voisi lisätä tietyille huoneille lisävarusteita, kuten housupressi tai lisäsänky. 
 - Admin-käyttäjälle lisää tominnallisuuksia, kuten muuta toisten käyttäjien oikeuksia ja poista käyttäjiä.
 - Sovelluksen tuominen nykyaikaan -- nykyisessä muodossaan ei ole kovin näyttävä. Eli sivuston tyylittelyn/käytettävyyden parantaminen.
 - Sovelluksen muuttaminen siten, että sitä voi käyttää asiakkaat ja työntekijät/hotellinomistaja. Asiakkaan rekisteröityminen lisäisi asiakkaan automaattisesti asiakas-tauluun. Asiakkaalla vain oikeudet listata huoneet, tehdä varaus ja listata omat varauksensa.
