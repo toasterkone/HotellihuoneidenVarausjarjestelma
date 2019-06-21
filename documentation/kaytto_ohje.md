@@ -77,7 +77,7 @@ Aloitussivun "Listaa Asiakkaat"-linkkiä painamalla avautuu näkymä, jossa list
 
 Asiakkaiden listaus-sivulla sijaitsee muokkaa-nappi, jota painaminen kirjautuneena vie lomakkeelle, joka on alla kuvassa. Tässä voi kirjoittaa päivitetyt tiedot ja painaa päivitä asiakkaan tiedot -nappia, jolloin asiakkaan tiedot päivittyvät.
 
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Listaa_asiakkaat.png "Asiakkaan tietojen päivittäminen")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/P%C3%A4ivit%C3%A4_asiakas.png "Asiakkaan tietojen päivittäminen")
 
 - Asiakkaan poistaminen
 
