@@ -16,14 +16,23 @@ Sovellusta voi käyttää nettiosoitteessa [https://tsoha-varaussovellus.herokua
 - Peru varaus
 - Uloskirjautuminen
 
+## Aloitussivu - kirjautumattomana
 
-## Aloitussivu
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_uusin.png "Kuva aloitussivusta kirjautumattomana")
 
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_uusin.png "Kuva aloitussivusta")
+Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu yllä olevan kuvan mukainen näkymä. Sivun yläreunassa näkyvät sovelluksen toiminnallisuudet. Tietyt toiminnallisuudet vaativat kirjautumisen joko käyttäjänä tai adminina.
 
-Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu alla olevan kuvan mukainen näkymä. Sivun yläreunassa näkyvät sovelluksen toiminnallisuudet. Aloitussivulla näytetään myös käyttäjät, joilla ei ole yhtään asiakasta. 
+## Aloitussivu - Käyttäjänä 
 
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_uusin.png "Kuva aloitussivusta käyttäjänä kirjautuneena")
 
+Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu yllä olevan kuvan mukainen näkymä. Sivun yläreunassa näkyvät sovelluksen toiminnallisuudet. Tietyt toiminnallisuudet vaativat kirjautumisen joko käyttäjänä tai adminina.
+
+## Aloitussivu - Adminina kirjautuneena
+
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_uusin.png "Kuva aloitussivusta adminina kirjautuneena")
+
+Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu yllä olevan kuvan mukainen näkymä. Sivun yläreunassa näkyvät sovelluksen toiminnallisuudet. Aloitussivulla näytetään myös käyttäjät, joilla ei ole yhtään asiakasta (näkyy vain, jos kirjautunut adminina). 
 
 
 ## Kirjautuminen

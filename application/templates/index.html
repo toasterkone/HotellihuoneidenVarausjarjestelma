@@ -2,22 +2,39 @@
 
 {% block body %}
 <p>
-  Tervetuloa käyttämään tietokantasovellusta! 
+  Tervetuloa käyttämään tietokantasovellusta! Tietyt toiminnallisuudet vaativat kirjautumisen joko käyttäjänä tai adminina. Löydät githubista testitunnukset molempiin. 
 </p>
 
-{% if needs_asiakkaita is defined %}
 <p>
-  Seuraavat käyttäjät eivät ole lisänneet asiakkaita:
+  Huom! Älä käytä oikeita salasanojasi tai käyttäjänimiäsi rekisteröityessäsi, koska tämä on kurssia varten tehty verkkosovellus, jossa salasanojen salaus ei ole vaadittua!
 </p>
 
-<ul>
-  {% for user in needs_asiakkaita %}
-  <li>
-    {{user.id}} {{user.name}}
-  </li>
-  {% endfor %}
-</ul>
+{% if current_user.is_authenticated %} 
+  {% if current_user.rooli.nimi == 'ADMIN' %} 
+    <p> 
+      Olet kirjautunut adminina. Pystyt käyttämään kaikkia toiminnallisuuksia.
+    </p>
 
+
+    {% if needs_asiakkaita is defined %}
+      <p>
+        Seuraavat käyttäjät eivät ole lisänneet asiakkaita:
+      </p>
+
+      <ul>
+        {% for user in needs_asiakkaita %}
+        <li>
+          {{user.id}} {{user.name}}
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  
+  {% else %}
+    <p>
+      Olet kirjautunut käyttäjä-oikeuksilla, joten et pysty käyttämään kaikkia toiminnallisuuksia.
+    </p>
+  {% endif %}
 {% endif %}
 
 {% endblock %}

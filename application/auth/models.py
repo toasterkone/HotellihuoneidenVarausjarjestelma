@@ -5,9 +5,11 @@
 
 #sisaltaa myos rooli-luokan
 
-from application import db
+from application import db, app, login_required
 
 from sqlalchemy.sql import text
+
+
 
 class User(db.Model):
 

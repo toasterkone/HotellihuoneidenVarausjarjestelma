@@ -58,7 +58,7 @@ Sovellus tarjoaa uudelle työntekijälle mahdollisuuden rekisteröityä sovelluk
 - CRUD-toiminnallisuudet asiakkaalle (lisäys, muokkaus, listaus ja poistaminen)
 - Kirjautuminen 
 - Rekisteröityminen (luo uudet USER-käyttäjän)
-- Yhteenvetokysely etusivulla, joka kertoo käyttäjät, jotka eivät ole lisänneet asiakkaita
+- Kurssin monimutkaisuuden vaatimuksen täyttävä yhteenvetokysely etusivulla, joka kertoo käyttäjät, jotka eivät ole lisänneet asiakkaita. Tämä näkyy aloitussivulla vain, jos on kirjautunut ADMIN-oikeuksilla.
 - Autorisointi (huoneen lisääminen vaatii ADMIN-oikeudet, muut toiminnot vaativat joko USER-oikeudet tai ei mitään oikeuksia). 
 - Osa tiedoista validoidaan. Esimerkiksi asiakkaan tietojen pitää täyttää tietyt vaatimukset.
 
