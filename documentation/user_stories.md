@@ -75,11 +75,12 @@ jossa id on peruttavan varauksen id.
 
 1. Haluan nähdä ketkä työntekijät eivät ole lisänneet asiakkaita.
 ```
-SELECT account.id, account.name
-FROM account
-JOIN rooli ON account.rooli_id = rooli.id
-LEFT JOIN asiakas ON account.id = asiakas.account_id
-WHERE asiakas.account_id IS NULL AND rooli.id != 1; 
+SELECT Account.id, Account.name 
+FROM Account
+LEFT JOIN Asiakas ON Asiakas.account_id = Account.id
+WHERE Asiakas.id IS NULL
+GROUP BY Account.id
+HAVING COUNT(Asiakas.id) = 0;
 ```
 2. Haluan lisätä hotellin laajennuksen seurauksena uuden huoneen.
 
