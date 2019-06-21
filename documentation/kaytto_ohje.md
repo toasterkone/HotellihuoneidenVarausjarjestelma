@@ -18,21 +18,21 @@ Sovellusta voi käyttää nettiosoitteessa [https://tsoha-varaussovellus.herokua
 
 ## Aloitussivu - kirjautumattomana
 
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_uusin.png "Kuva aloitussivusta kirjautumattomana")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_kirjautumaton.png "Kuva aloitussivusta kirjautumattomana")
 
 Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu yllä olevan kuvan mukainen näkymä. Sivun yläreunassa näkyvät sovelluksen toiminnallisuudet. Tietyt toiminnallisuudet vaativat kirjautumisen joko käyttäjänä tai adminina.
 
-## Aloitussivu - Käyttäjänä 
+## Aloitussivu - Käyttäjänä kirjautuneena
 
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_uusin.png "Kuva aloitussivusta käyttäjänä kirjautuneena")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_k%C3%A4ytt%C3%A4j%C3%A4.png "Kuva aloitussivusta käyttäjänä kirjautuneena")
 
-Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu yllä olevan kuvan mukainen näkymä. Sivun yläreunassa näkyvät sovelluksen toiminnallisuudet. Tietyt toiminnallisuudet vaativat kirjautumisen joko käyttäjänä tai adminina.
+Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu yllä olevan kuvan mukainen näkymä. Sivun yläreunassa näkyvät sovelluksen toiminnallisuudet. Pystyt käyttämään kaikkia toiminnallisuuksia paitsi huoneen lisäystä.
 
 ## Aloitussivu - Adminina kirjautuneena
 
-![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_uusin.png "Kuva aloitussivusta adminina kirjautuneena")
+![alt text](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/kayttotarkoituskuvia/Aloitussivu_Admin.png "Kuva aloitussivusta adminina kirjautuneena")
 
-Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu yllä olevan kuvan mukainen näkymä. Sivun yläreunassa näkyvät sovelluksen toiminnallisuudet. Aloitussivulla näytetään myös käyttäjät, joilla ei ole yhtään asiakasta (näkyy vain, jos kirjautunut adminina). 
+Siirtyessäsi yllä olevalle sovellussivulle sinulle avautuu yllä olevan kuvan mukainen näkymä. Sivun yläreunassa näkyvät sovelluksen toiminnallisuudet. Aloitussivulla näytetään myös käyttäjät, joilla ei ole yhtään asiakasta (näkyy vain, jos kirjautunut adminina). Pystyt käyttämään kaikkia toiminnallisuuksia. 
 
 
 ## Kirjautuminen
