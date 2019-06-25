@@ -11,10 +11,11 @@ from wtforms import BooleanField, StringField, validators
 
 class AsiakasForm(FlaskForm):
     #Tekstikentat asiakkaan etu- ja sukunimea, puhelinnumeroa, emailia varten
-    etunimi = StringField("Asiakas etunimi", [validators.Length(min=2)]) #vahintaan 2 merkkia
-    sukunimi = StringField("Asiakas sukunimi", [validators.Length(min=2)])
-    puhelinnumero = StringField("Asiakas puhelinnumero", [validators.Length(min=5)])
-    email = StringField("Asiakas email", [validators.Length(min=3)])
+    
+    etunimi = StringField("Asiakas etunimi", [validators.Length(min=2, max=144, message="Etunimen pituuden pitää olla 2-144 merkkiä.")])
+    sukunimi = StringField("Asiakas sukunimi", [validators.Length(min=2, max=144, message="Sukunimen pituuden pitää olla 2-144 merkkiä.")])
+    puhelinnumero = StringField("Asiakas puhelinnumero", [validators.Length(min=5, max=144, message="Puhelinnumeron pituuden pitää olla 5-144 merkkiä.")])
+    email = StringField("Asiakas email", [validators.Length(min=3, max=144, message="Sähköpostin pituuden pitää olla 3-144 merkkiä.")])
     
  
     class Meta:

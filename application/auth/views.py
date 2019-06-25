@@ -21,7 +21,7 @@ def auth_login():
     #jos kayttajaa ei loydy -> nayta lomake uudestaan + virheviesti
     if not user:
         return render_template("auth/loginform.html", form = form,
-                               error = "No such username or password")
+                               error = "Käyttäjänimi tai salasana virheellinen.")
 
     #jos kayttaja loytyy tulostetaan tieto tunnistamisesta ja palataan sovelluksen etusivulle
     #print("Käyttäjä " + user.name + " tunnistettiin")

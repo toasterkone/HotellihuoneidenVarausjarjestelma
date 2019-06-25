@@ -7,8 +7,8 @@ from wtforms import PasswordField, StringField, validators
   
 #Lomake kirjautumiselle
 class LoginForm(FlaskForm):
-    username = StringField("Username")
-    password = PasswordField("Password")
+    username = StringField("Käyttäjänimi")
+    password = PasswordField("Salasana")
   
     class Meta:
         csrf = False
@@ -17,9 +17,10 @@ class LoginForm(FlaskForm):
 #nimi, username ja salasana minimi 2 ja maksimi 144 merkkia
 #Lomake uudelle kayttajalle
 class RekisteriForm(FlaskForm):
-    name = StringField("Kokonimi (etunimi sukunimi)", [validators.Length(min=2, max=144)])
-    username = StringField("Username", [validators.Length(min=2, max=144)])
-    password = StringField("Password", [validators.Length(min=2, max=144)])
+    name = StringField("Kokonimi (etunimi sukunimi)", [validators.Length(min=2, max=144, message="Kokonimen pituuden pitää olla 2-144 merkkiä.")])
+    username = StringField("Käyttäjänimi", [validators.Length(min=2, max=144, message="Käyttäjänimen pituuden pitää olla 2-144 merkkiä.")])
+    password = StringField("Salasana", [validators.Length(min=2, max=144, message="Salasanan pituuden pitää olla 2-144 merkkiä.")])
+
 
 
     class Meta:
