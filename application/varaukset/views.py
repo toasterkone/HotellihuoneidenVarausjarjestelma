@@ -11,6 +11,9 @@ from flask import redirect, render_template, request, url_for
 from application.varaukset.models import Varaus
 from application.varaukset.forms import VarausForm
 
+from application.huoneet.models import Huone
+from application.asiakkaat.models import Asiakas
+
 from flask_login import login_required, current_user
 
 
@@ -31,44 +34,48 @@ def varaukset_form():
     return render_template("varaukset/new.html", form = VarausForm())
 
 #lisaa uuden varauksen pyynnossa lahetetyn lomakkeen perusteella
-@app.route("/varaukset/", methods=["POST"])
+@app.route("/varaukset/", methods = ["GET", "POST"])
 @login_required
 def varaukset_create():
-
+    #syöta huone_id, asiakas_id, viikkonro, hinta
+    if request.method == "GET":
+        return render_template("varaukset/new.html", form = VarausForm())
 
     form = VarausForm(request.form)
-    
 
     #jos virheelliset syotteet, naytetaan lomakesivu uudestaan
     if not form.validate():
         return render_template("varaukset/new.html", form = form)
+
+    #onko huone olemassa
+    olemassaolevaHuone = Huone.query.filter_by(id=form.huone_id.data).first()
+    if not olemassaolevaHuone:
+        return render_template("varaukset/new.html", form=form, error = "Huonetta ei ole olemassa.")  
     
+    #matchaako huone ja hinta
+    huone = Huone.query.filter_by(hinta=form.hinta.data,id=form.huone_id.data).first()
+    if not huone:
+        return render_template("varaukset/new.html", form=form, error = "Huoneen hinta ja id eivät vastaa.")
 
+    #onko huone varattu jo varausviikkona
+    vanhaVaraus = Varaus.query.filter_by(varausviikko=form.varausviikko.data, huone_id=form.huone_id.data).first()
+    if vanhaVaraus:
+        return render_template("varaukset/new.html", form=form, error = "Huone on jo varattuna haluttuna viikkona.") 
 
-
+    #onko asiakas olemassa
+    olemassaolevaAsiakas = Asiakas.query.filter_by(id=form.asiakas_id.data).first()
+    if not olemassaolevaAsiakas:
+        return render_template("varaukset/new.html", form=form, error = "Asiakasta ei ole olemassa.")      
+   
+    #jos oikeat tiedot
     v = Varaus(form.varausviikko.data,form.hinta.data)
-
-
-    #varaukselle asiakas_id
     v.asiakas_id = form.asiakas_id.data
-    #varaukselle huone_id
     v.huone_id = form.huone_id.data
-    #hinta haetaan huone_id:n perusteella
-    #v.hinta = Huone.query.get(form.huone_id.data)
- 
 
-    #huoneelle varaus
-    #v.asiakas_id = current_user.id
-
-    #asiakkaalle varaus
-    #v._id = current_user.id
-  
     db.session().add(v)
     db.session().commit()
 
-
     return redirect(url_for("varaukset_index"))
-
 
 #varauksen poistaminen, vaatii kirjautumisen
 @app.route("/varaukset/<varaus_id>/delete", methods=["GET"])
