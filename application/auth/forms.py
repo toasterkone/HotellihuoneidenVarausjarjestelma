@@ -19,7 +19,8 @@ class LoginForm(FlaskForm):
 class RekisteriForm(FlaskForm):
     name = StringField("Kokonimi (etunimi sukunimi)", [validators.Length(min=2, max=144, message="Kokonimen pituuden pitää olla 2-144 merkkiä.")])
     username = StringField("Käyttäjänimi", [validators.Length(min=2, max=144, message="Käyttäjänimen pituuden pitää olla 2-144 merkkiä.")])
-    password = StringField("Salasana", [validators.Length(min=2, max=144, message="Salasanan pituuden pitää olla 2-144 merkkiä.")])
+    password = StringField("Salasana", [validators.equal_to('vahvista', message='Salasanat pitää täsmätä'),validators.Length(min=2, max=144, message="Salasanan pituuden pitää olla 2-144 merkkiä.")])
+    vahvista = StringField("Toista salasana")
 
 
 
