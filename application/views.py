@@ -6,8 +6,6 @@ from application.huoneet.models import Huone
 from application.varaukset.models import Varaus
 from application.lisavarusteet.models import Lisavaruste
 
-#tiedosto sisaltaa ohjeistuksen sovelluksen paasivulle paasemiseen
-
 #Ohjeistaa Flaskia siten, etta jokainen juuripolkuun "/" saapuva pyynto johtaa kayttajalla index.html-tiedoston nayttamiseen
 
 #metodikutsun "etsi_kayttajat_ilman_asiakkaita()" palauttama lista lisataan
@@ -16,4 +14,4 @@ from application.lisavarusteet.models import Lisavaruste
 @app.route("/")
 def index():
     return render_template("index.html",needs_asiakkaita=User.etsi_kayttajat_ilman_asiakkaita())
-    #return render_template("index.html")
+

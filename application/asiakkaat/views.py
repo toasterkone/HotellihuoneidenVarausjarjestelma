@@ -1,4 +1,3 @@
-
 #sisaltaa asiakkaiden kasittelyyn ja nakymien nayttamiseen liittyvat toiminnallisuudet
 
 #uuden asiakkaan luominen asettaa myös käyttäjän luotavalle asiakkaalle. 
@@ -8,17 +7,13 @@ from flask import redirect, render_template, request, url_for
 from application.asiakkaat.models import Asiakas
 from application.asiakkaat.forms import AsiakasForm
 
-from flask_login import current_user#, login_required 
-
-
-
+from flask_login import current_user
 
 
 #kuuntelee GET-tyyppisia pyyntoja polkuun /asiakkaat
 @app.route("/asiakkaat/", methods=["GET"])
 def asiakkaat_index():
     return render_template("asiakkaat/list.html", asiakkaat = Asiakas.query.all())
-
 
 #nayttaa kayttajalle lomakkeen, jolla luodaan asiakkaita
 @app.route("/asiakkaat/new/")
@@ -31,18 +26,11 @@ def asiakkaat_form():
 @login_required()
 def asiakkaat_create():
 
-    #Asiakas-oliolle haetaan tekstikentista attribuutit
-    #a = Asiakas(request.form.get("etunimi"), request.form.get("sukunimi"), request.form.get("puhelinnumero"), request.form.get("email"))
-
-  
     form = AsiakasForm(request.form)
-    
-
     #jos virheelliset syotteet, naytetaan lomakesivu uudestaan
     if not form.validate():
         return render_template("asiakkaat/new.html", form = form)
     
-
     a = Asiakas(form.etunimi.data,form.sukunimi.data,form.puhelinnumero.data,form.email.data)
     
     #kayttajalle asiakas
@@ -51,16 +39,7 @@ def asiakkaat_create():
     db.session().add(a)
     db.session().commit()
 
-
     return redirect(url_for("asiakkaat_index"))
-
-
-
-
-
-
-
-
 
 #metodi paivittaa kaikki tiedot, jotka halutaan muuttaa
 @app.route("/asiakkaat/<asiakas_id>/muokkaa/", methods=["GET", "POST"])

@@ -1,18 +1,12 @@
 #Kayttaja-luokka, nimetty account-luokaksi
-#kayttajalla tunnus, tieto luomisesta/paivittamisesta nimi, kayttajanimi, salasana
-
-#käyttäjälle on metodit get_id, is_active, is_anonymous sekä is_authenticated.
-
 #sisaltaa myos rooli-luokan
 
 from application import db, app, login_required
 
 from sqlalchemy.sql import text
 
-
-
 class User(db.Model):
-
+    #taulun nimeksi account
     __tablename__ = "account"
   
     id = db.Column(db.Integer, primary_key=True)
@@ -48,13 +42,6 @@ class User(db.Model):
     def is_authenticated(self):
         return True
 
-
-
- 
-
-
-
-
     #metodi, palauttaa kayttajat, joilla ei yhtaan asiakasta
     @staticmethod
     def etsi_kayttajat_ilman_asiakkaita():
@@ -74,8 +61,7 @@ class User(db.Model):
 
         return response
 
-
-#Rooli-luokka, jolla attribuutit id ja nimi
+#Rooli-luokka
 class Rooli(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nimi = db.Column(db.String(32), nullable=False)

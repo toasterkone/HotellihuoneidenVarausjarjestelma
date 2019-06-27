@@ -1,12 +1,8 @@
-
 #sisaltaa varausten kasittelyyn ja nakymien nayttamiseen liittyvat toiminnallisuudet
-
 #uuden varauksen luominen asettaa myös huoneen/asiakkaan luotavalle varaukselle. 
 
 from application import app, db
 from flask import redirect, render_template, request, url_for
-#from application.asiakkaat.models import Asiakas
-#from application.asiakkaat.forms import AsiakasForm
 
 from application.varaukset.models import Varaus
 from application.varaukset.forms import VarausForm
@@ -16,16 +12,11 @@ from application.asiakkaat.models import Asiakas
 
 from flask_login import login_required, current_user
 
-
-
-
-
 #kuuntelee GET-tyyppisia pyyntoja polkuun /varaukset
 #varausten listaaminen
 @app.route("/varaukset/", methods=["GET"])
 def varaukset_index():
     return render_template("varaukset/list.html", varaukset = Varaus.query.all())
-
 
 #nayttaa kayttajalle lomakkeen, jolla luodaan varauksia
 @app.route("/varaukset/new/")
@@ -67,7 +58,7 @@ def varaukset_create():
     if not olemassaolevaAsiakas:
         return render_template("varaukset/new.html", form=form, error = "Asiakasta ei ole olemassa.")      
    
-    #jos oikeat tiedot
+    #jos oikeat tiedot niin lisää varaus
     v = Varaus(form.varausviikko.data,form.hinta.data)
     v.asiakas_id = form.asiakas_id.data
     v.huone_id = form.huone_id.data

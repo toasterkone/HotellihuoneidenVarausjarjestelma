@@ -11,14 +11,5 @@ class VarausForm(FlaskForm):
     asiakas_id = IntegerField("Asiakkaan id", [validators.NumberRange(min=1, max=1000, message="Asiakas_id pitää olla 1-1000.")])
     hinta = IntegerField("Huoneen hinta", [validators.NumberRange(min=1, max=2000, message="Hinnan pitää olla 1-2000")])
     
-  
-    #hinta = IntegerField("Huoneen hinta", [validators.equal_to('tarkistusHinta', message='Syota oikea hinta')])
-
-
-    #tarkistetaan, että syötetty huoneen hinta vastaa oikeaa hintaa
-
-    #h = Huone.query.filter_by(id=huone_id).first()
-    #tarkistusHinta = h.hinta
-
     class Meta:
-        csrf = False #turvautuminen cross-site request forgery -hyökkäyksiä vastaan kytketään pois päältä. 
+        csrf = False 

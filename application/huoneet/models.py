@@ -8,7 +8,7 @@ lisavarusteet = db.Table('huonelisavaruste',db.Column('huone_id', db.Integer,db.
 
 class Huone(db.Model):
 
-    id = db.Column(db.Integer, primary_key=True) #Paa-avain
+    id = db.Column(db.Integer, primary_key=True) 
 
     date_created = db.Column(db.DateTime, default=db.func.current_timestamp())
     date_modified = db.Column(db.DateTime, default=db.func.current_timestamp(),

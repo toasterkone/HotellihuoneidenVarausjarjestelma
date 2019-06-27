@@ -23,15 +23,9 @@ def auth_login():
         return render_template("auth/loginform.html", form = form,
                                error = "Käyttäjänimi tai salasana virheellinen.")
 
-    #jos kayttaja loytyy tulostetaan tieto tunnistamisesta ja palataan sovelluksen etusivulle
-    #print("Käyttäjä " + user.name + " tunnistettiin")
-
     #kirjautumislomakkeen käsittelyyn kirjautuminen
     login_user(user)
     return redirect(url_for("index")) 
-
-
-
 
 #rekisteroytymiselle toiminnallisuus
 @app.route("/auth/uusi_kayttaja", methods=["GET", "POST"])
@@ -49,19 +43,13 @@ def auth_rekisteroidy():
     #Luodaan uusi kayttaja, haetaan tiedot lomakkeesta
     kayttaja = User(form.name.data, form.username.data, form.password.data)
     #rooli on automaattisesti kayttaja eika ADMIN    
-    #kayttaja.rooli = Rooli.query.get(2)
     kayttaja.rooli_id = 2 
-
     
     db.session().add(kayttaja)
     db.session().commit()
 
     #lopuksi ohjaa kirjautumaan
     return redirect(url_for("auth_login"))
-
-
-
-
 
 #uloskirjautumistoiminnallisuus
 @app.route("/auth/logout")
