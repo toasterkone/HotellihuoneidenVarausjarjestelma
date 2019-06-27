@@ -13,9 +13,11 @@ Varauksen lisääminen vaatii, että käyttäjä muistaa asiakkaan id:n, sekä h
 
 Asiakkaiden, huoneiden ja varausten listaamisessa ei voi rajata hakutuloksia.
 
+Lisävaruste- ja huonelisavaruste-taulut on lisätty tietokantaan, mutta niille ei ole vielä toteutettu toiminnallisuuksia.
+
 ## Sovelluksen puuttuvat ominaisuudet
 
-Suoritin kurssin kesällä töiden ohella iltaisin, joten käytössä oleva aika oli välillä rajallista. Tämä huomioiden sovelluksessa on vielä paljon, mitä haluaisin lisätä siihen ja mitä haluaisin parantaa siinä. Tiedostossa README.md on kerrottu tarkemmin puuttuvista ominaisuuksista ja jatkokehitysideoista.
+Suoritin kurssin kesällä töiden ohella iltaisin, joten käytössä oleva aika oli välillä rajallista. Tämä huomioiden sovelluksessa on vielä paljon, mitä haluaisin lisätä siihen ja mitä haluaisin parantaa siinä. Tiedostossa ominaisuudet_ja_jatkokehitys.md on kerrottu tarkemmin puuttuvista ominaisuuksista ja jatkokehitysideoista.
 
 ## Kurssilla opitut asiat
 

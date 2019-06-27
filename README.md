@@ -16,6 +16,8 @@ Sovellus tarjoaa uudelle työntekijälle mahdollisuuden rekisteröityä sovelluk
 ## Linkki Herokussa sijaitsevaan sovellukseen
 [Herokussa oleva sovellus](https://tsoha-varaussovellus.herokuapp.com/)
 
+## Osa sovelluksen kehityksessä käytetyistä työkaluista 
+- SQLite, PostgreSQL, SQLAlchemy, Flask, Python, HTML, Bootstrap
 
 ## Dokumentaatio
 
@@ -25,7 +27,7 @@ Sovellus tarjoaa uudelle työntekijälle mahdollisuuden rekisteröityä sovelluk
 - [Create Table -lauseet](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/SQL_Create_Table_lauseet.md )
 - [Käyttäjätarinat](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/user_stories.md )
 - [Omat kokemukset](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/omat_kokemukset.md )
-- [Toteutuneet/toteutumattomat ominaisuudet ja jatkokehitys](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/omat_kokemukset.md )
+- [Toteutuneet/toteutumattomat ominaisuudet ja jatkokehitys](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/ominaisuudet_ja_jatkokehitys.md )
 - [Tietokantakaavio](https://github.com/toasterkone/HotellihuoneidenVarausjarjestelma/blob/master/documentation/tietokantakaaviot/toteutunut_tietokantakaavio.png )
 
 
@@ -47,7 +49,7 @@ Sovellus tarjoaa uudelle työntekijälle mahdollisuuden rekisteröityä sovelluk
 
 ## Normalisointi
 
-Tietokantaa ei ole normalisoitu 3:een normaalimuotoon, sillä esimerkiksi varaus-taulussa on ns. ylimääräistä tietoa (hinta). Tämä sen takia, että tietyissä tauluissa käytettävyys helpottuu, kun sisällytetään ylimääräistä tietoa.
+Tietokantaa ei ole täysin normalisoitu 3:een normaalimuotoon, sillä esimerkiksi varaus-taulussa on ns. ylimääräistä tietoa (hinta). Tämä sen takia, että tietyissä tauluissa käytettävyys helpottuu, kun sisällytetään ylimääräistä tietoa.
 
 ## Sovelluksen tietokantataulut
 - Asiakas
