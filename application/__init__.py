@@ -97,6 +97,10 @@ from application.varaukset import views
 #kirjautuminen 2.
 from application.auth.models import User, Rooli
 
+#Lisavaruste-luokka kayttoon
+from application.lisavarusteet import models
+from application.lisavarusteet import views
+
 
 
 

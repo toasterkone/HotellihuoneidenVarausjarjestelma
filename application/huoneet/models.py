@@ -1,6 +1,10 @@
 #Luokka huone
 
 from application import db
+from application.auth import models
+
+#Liitostaulu huonelisavaruste
+lisavarusteet = db.Table('huonelisavaruste',db.Column('huone_id', db.Integer,db.ForeignKey('huone.id'), primary_key=True),db.Column('lisavaruste_id', db.Integer,db.ForeignKey('lisavaruste.id'), primary_key=True))
 
 class Huone(db.Model):
 
@@ -17,6 +21,9 @@ class Huone(db.Model):
 
     #jokaiseen huoneeseen liitetään huoneen varaus-tiedot
     varaukset = db.relationship("Varaus", backref='varaus2', lazy=True)
+
+    #Huoneella lisavarusteita
+    lisavarusteet = db.relationship('Lisavaruste', secondary=lisavarusteet, lazy='subquery',backref=db.backref('huoneet', lazy=True))
  
     def __init__(self, huonenumero, hinta, tyyppi):
         self.huonenumero = huonenumero

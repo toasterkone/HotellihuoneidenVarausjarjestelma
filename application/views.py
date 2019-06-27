@@ -4,6 +4,7 @@ from application.auth.models import User
 from application.asiakkaat.models import Asiakas
 from application.huoneet.models import Huone
 from application.varaukset.models import Varaus
+from application.lisavarusteet.models import Lisavaruste
 
 #tiedosto sisaltaa ohjeistuksen sovelluksen paasivulle paasemiseen
 
