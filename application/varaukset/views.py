@@ -1,7 +1,7 @@
 #sisaltaa varausten kasittelyyn ja nakymien nayttamiseen liittyvat toiminnallisuudet
 #uuden varauksen luominen asettaa myös huoneen/asiakkaan luotavalle varaukselle. 
 
-from application import app, db
+from application import app, db, login_required
 from flask import redirect, render_template, request, url_for
 
 from application.varaukset.models import Varaus
@@ -10,7 +10,7 @@ from application.varaukset.forms import VarausForm
 from application.huoneet.models import Huone
 from application.asiakkaat.models import Asiakas
 
-from flask_login import login_required, current_user
+from flask_login import current_user
 
 #kuuntelee GET-tyyppisia pyyntoja polkuun /varaukset
 #varausten listaaminen
@@ -20,13 +20,13 @@ def varaukset_index():
 
 #nayttaa kayttajalle lomakkeen, jolla luodaan varauksia
 @app.route("/varaukset/new/")
-@login_required
+@login_required()
 def varaukset_form():
     return render_template("varaukset/new.html", form = VarausForm())
 
 #lisaa uuden varauksen pyynnossa lahetetyn lomakkeen perusteella
 @app.route("/varaukset/", methods = ["GET", "POST"])
-@login_required
+@login_required()
 def varaukset_create():
     #syöta huone_id, asiakas_id, viikkonro, hinta
     if request.method == "GET":
@@ -70,7 +70,7 @@ def varaukset_create():
 
 #varauksen poistaminen, vaatii kirjautumisen
 @app.route("/varaukset/<varaus_id>/delete", methods=["GET"])
-@login_required 
+@login_required() 
 def varaukset_poista(varaus_id):
 
     db.session.delete(Varaus.query.get(varaus_id))

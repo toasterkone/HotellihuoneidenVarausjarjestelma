@@ -14,8 +14,8 @@
 - Kirjautuminen 
 - Rekisteröityminen (luo uudet USER-käyttäjän)
 - Kurssin monimutkaisuuden vaatimuksen täyttävä yhteenvetokysely etusivulla, joka kertoo käyttäjät, jotka eivät ole lisänneet asiakkaita. Tämä näkyy aloitussivulla vain, jos on kirjautunut ADMIN-oikeuksilla.
-- Autorisointi (huoneen lisääminen vaatii ADMIN-oikeudet, muut toiminnot vaativat joko USER-oikeudet tai ei mitään oikeuksia). 
-- Osa tiedoista validoidaan. Esimerkiksi asiakkaan tietojen pitää täyttää tietyt vaatimukset.
+- Autorisointi (huoneen lisääminen vaatii ADMIN-oikeudet, muut toiminnot vaativat joko USER-oikeudet tai ei mitään oikeuksia).
+- Käyttäjien syötteet validoidaan
 - Monen suhde moneen taulut (lisavaruste ja huone) ja liitostaulu (huonelisavaruste)
 - Tuotannossa käytössä PSQL ja lokaalisti SQLite
 
@@ -23,7 +23,7 @@
 
 - Lisävarusteisiin liittyvät toiminnallisuudet, kuten lisävarusteiden lisääminen ja listaaminen, lisävarusteiden lisäys huoneelle ja huoneiden lisävarusteiden listaus.
 - Asiakkaan varausten hakeminen nimellä.
-- Yhdellä varauksella voisi varata useita huoneita.
+- Yhdellä varauksella voisi varata useita huoneita. Eli huoneen ja varauksen muuttaminen monen suhde moneen tauluiksi ja tähän liitostaulu.
 - Varausten hakeminen tietylle aikavälille.
 - Listausten (asiakkaat, huoneet, varaukset, lisävarusteet) sivutus.
 - Varausajan muuttaminen realistisemmaksi. Tällä hetkellä huone varataan aina viikoksi kerrallaan, todellisempaa olisi, jos huone varattaisiin haluttujen päivien ajaksi.
